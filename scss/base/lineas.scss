@@ -1,0 +1,21 @@
+/* lineas */
+
+.linea-verdeoscuro {
+    border-top: 10px solid #07291a;
+}
+
+.linea {
+    border-top: 10px solid $verde-oscuro;
+}
+
+.linea-blanco {
+    border-top: 10px solid #fff;
+}
+
+.linea-container {
+    border-top: 10px solid $amarillo;
+}
+
+.linea-naranja {
+    border-top: 10px solid $naranja;
+}

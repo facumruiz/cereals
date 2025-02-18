@@ -1,0 +1,1176 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* lineas */
+.linea-verdeoscuro {
+  border-top: 10px solid #07291a;
+}
+
+.linea {
+  border-top: 10px solid #217a5c;
+}
+
+.linea-blanco {
+  border-top: 10px solid #fff;
+}
+
+.linea-container {
+  border-top: 10px solid #ffbb33;
+}
+
+.linea-naranja {
+  border-top: 10px solid #f97e2b;
+}
+
+/* MOBILE STYLES */
+@media only screen and (max-width: 450px) {
+  /* HEADER */
+  .imagen-header {
+    text-align: left !important;
+    height: 60px !important;
+    position: static !important;
+  }
+
+  .navbar-toggler {
+    background-color: #ffbb33 !important;
+    border-radius: 20px !important;
+    text-align: left !important;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    font-size: 15px !important;
+    color: #217a5c;
+    text-align: left !important;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .nav-link:hover {
+    color: #ffbb33 !important;
+    transition: 1s;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .menu-principal {
+    margin: 0px !important;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center !important;
+    font-size: 18px !important;
+    position: static !important;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .bandera-menu:hover {
+    transform: scale(1.3) !important;
+    transition: 1s;
+    border-radius: 3px;
+  }
+
+  .login {
+    position: static;
+  }
+
+  .banderas-mobile {
+    position: relative;
+    right: 10px !important;
+  }
+
+  /* CARPOUSEL */
+  .img-carousel {
+    height: 300px;
+  }
+
+  .titulo-carousel {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 25px !important;
+    position: relative !important;
+    bottom: 45px !important;
+    filter: drop-shadow(0 0 0.5rem black);
+  }
+
+  /* CARDS */
+  .card-productos {
+    background-color: white;
+    padding: 10px 0px !important;
+  }
+
+  .card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    border-radius: 15px !important;
+  }
+
+  .card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 100px;
+  }
+
+  .card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 100px;
+  }
+
+  .card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 100px;
+  }
+
+  .card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 100px;
+  }
+
+  .card-title {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    padding-top: 25px !important;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-text {
+    font-size: 18px !important;
+    font-family: "Titillium Web", sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+  }
+
+  .imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+  }
+
+  .imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
+  }
+
+  .seccion-barcos {
+    padding: 100px 0px !important;
+  }
+
+  .img-svg {
+    position: relative !important;
+    right: 12% !important;
+  }
+
+  .card-barcos {
+    filter: drop-shadow(0 0 0.5rem black);
+    margin-top: 15px !important;
+  }
+
+  /* ABOUT US */
+  .aboutus-container {
+    background: #020024;
+    background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+    padding: 0 20px !important;
+    text-align: center !important;
+  }
+
+  .titulo-aboutus {
+    display: flex;
+    justify-content: center;
+    font-size: 40px !important;
+    padding-bottom: 25px;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+  }
+
+  .parrafo-aboutus {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 15px !important;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    filter: drop-shadow(0 0 0.5rem black);
+    margin-bottom: 0px !important;
+  }
+
+  .subtitulo-aboutus {
+    display: flex;
+    justify-content: center;
+    font-size: 25px !important;
+    font-family: "Titillium Web", sans-serif;
+    color: #ffbb33;
+    margin-bottom: -1px !important;
+  }
+
+  /* QUE HACEMOS */
+  .quehacemos {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 20px 20px !important;
+  }
+
+  /* .box1 {
+      background-color: rgba(161, 161, 161, 0.3);
+      border-radius: 5px; 
+      text-align: center; 
+      line-height: 1; 
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      padding: 25px 25px; 
+  }  */
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* LEGALES */
+  .seccion-legales {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+    background-position: top;
+    background-size: cover;
+    padding: 20px 20px !important;
+  }
+
+  .boton-mas-info {
+    position: static !important;
+    display: flex !important;
+  }
+
+  .boton-legales {
+    background-color: #ffbb33 !important;
+  }
+
+  .modal-header {
+    background-color: #217a5c !important;
+  }
+
+  .color-font {
+    color: #000 !important;
+    filter: drop-shadow(0 0 0.8rem black);
+  }
+}
+/* FIN MOBILE STYLES */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MACBOOK 13" STYLES */
+@media only screen and (min-width: 1000px) and (max-width: 1700px) {
+  /* HEADER */
+  .imagen-header {
+    text-align: left !important;
+    height: 120px !important;
+    position: static !important;
+    padding-left: 150px;
+  }
+
+  .nav-link {
+    color: #fff !important;
+  }
+
+  .nav-link:hover {
+    color: #ffbb33 !important;
+    transition: 1s;
+  }
+
+  .navbar-nav {
+    display: flex !important;
+    justify-content: center !important;
+    padding-right: 80px !important;
+  }
+
+  .menu-principal {
+    margin: 0px !important;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center !important;
+    font-size: 20px !important;
+    position: static !important;
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  .lenguajes-login {
+    padding-left: 35px !important;
+  }
+
+  .bandera-menu:hover {
+    transform: scale(1.3) !important;
+    transition: 1s;
+    border-radius: 3px;
+  }
+
+  .login {
+    position: static;
+  }
+
+  .banderas-mobile {
+    position: relative;
+    right: 10px !important;
+  }
+
+  /* CAROUSEL */
+  .img-carousel {
+    height: 650px;
+  }
+
+  .titulo-carousel {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 70px;
+    position: relative;
+    bottom: 150px !important;
+    filter: drop-shadow(0 0 0.5rem black);
+  }
+
+  /* CARDS */
+  .card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    padding: 50px 10px !important;
+    border-radius: 15px !important;
+    width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 630px !important;
+  }
+
+  .card-title {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-text {
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+  }
+
+  .btn-compra {
+    position: relative !important;
+    left: 29% !important;
+  }
+
+  .imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+  }
+
+  .imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
+  }
+
+  /* progress bar */
+  .img-svg {
+    position: relative;
+    right: 4% !important;
+  }
+
+  /* ABOUT US */
+  .aboutus-container {
+    background: #020024;
+    background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+    padding: 100px 200px !important;
+    text-align: center !important;
+  }
+
+  .titulo-aboutus {
+    display: flex;
+    justify-content: center;
+    font-size: 60px !important;
+    padding-bottom: 25px;
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+  }
+
+  .parrafo-aboutus {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 22px !important;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    filter: drop-shadow(0 0 0.5rem black);
+  }
+
+  .subtitulo-aboutus {
+    display: flex;
+    justify-content: center;
+    font-size: 45px !important;
+    font-family: "Titillium Web", sans-serif;
+    color: #ffbb33;
+    margin-bottom: -1px !important;
+  }
+
+  /* QUE HACEMOS */
+  .quehacemos {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 180px !important;
+  }
+
+  /* .box1 {
+      background-color: rgba(161, 161, 161, 0.3);
+      border-radius: 5px; 
+      text-align: center; 
+      line-height: 1; 
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      padding: 25px 25px; 
+  }  */
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  /* LEGALES */
+  .seccion-legales {
+    padding: 100px 180px !important;
+  }
+
+  .boton-mas-info {
+    position: relative;
+    left: 830px !important;
+  }
+}
+/* FIN MACBOOK PRO 13" STYLES */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1701px) and (max-width: 1970px) {
+  /* CARDS */
+  .card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    padding: 50px 100px !important;
+    border-radius: 15px !important;
+    width: 80%;
+    margin: 0 auto !important;
+  }
+
+  .card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 650px !important;
+  }
+
+  .card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 630px !important;
+  }
+
+  .card-title {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-text {
+    font-size: 20px;
+    font-family: "Titillium Web", sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+  }
+
+  .imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+  }
+
+  .imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
+  }
+}
+loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#loading:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #217a5c;
+  border-top-color: #e7e4fe;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* header */
+nav {
+  background: -webkit-radial-gradient(#217a5c, #051d12) !important;
+  background: -moz-radial-gradient(#217a5c, #051d12) !important;
+}
+
+.imagen-header {
+  position: relative;
+  left: 250px;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #ffbb33 !important;
+  transition: 1s;
+}
+
+.menu-principal {
+  margin: 15px;
+}
+
+.menu {
+  display: flex;
+  text-align: right !important;
+  font-size: 25px;
+  position: relative;
+  right: 335px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.bandera-menu:hover {
+  transform: scale(1.3) !important;
+  transition: 1s;
+  border-radius: 3px;
+}
+
+.login {
+  position: relative;
+  left: -80px;
+}
+
+.titulo-carousel {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 70px;
+  position: relative;
+  bottom: 280px;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+/* seccion cards */
+.card {
+  color: white;
+  filter: drop-shadow(0 0 0.5rem black);
+  padding: 30px;
+  border-radius: 15px !important;
+}
+
+.card-productos {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background-position: top;
+  background-size: cover;
+  padding: 100px 150px;
+}
+
+.card-imagen1 {
+  background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+  background-size: 450px;
+}
+
+.card-imagen2 {
+  background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+  background-size: 450px;
+}
+
+.card-imagen3 {
+  background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+  background-size: 450px;
+}
+
+.card-imagen4 {
+  background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+  background-size: 430px;
+}
+
+.card-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  padding-bottom: 10px;
+  filter: drop-shadow(0 0 0.5rem black);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-text {
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+  top: 15px;
+  text-align: center !important;
+}
+
+.imagen-container {
+  position: relative !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+.imagen-productos {
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px !important;
+}
+
+/* cards barcos */
+.seccion-barcos {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888148126454657085/barco1.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 100px 180px;
+}
+
+.card-barcos {
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.titulo-barcos {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffbb33;
+}
+
+.parrafo-barcos {
+  display: flex;
+  justify-content: center !important;
+  font-size: 22px;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffbb33;
+}
+
+.subtitulo-barcos {
+  display: flex;
+  justify-content: center !important;
+  font-size: 55px;
+  font-family: "Titillium Web", sans-serif;
+  color: #217a5c;
+}
+
+/* progress bar */
+.img-svg {
+  position: relative;
+  right: 102px;
+}
+
+/* barco 1 */
+.fill-1 {
+  animation: charge 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol 5s ease-in;
+  transform: scaleX(6.5);
+}
+
+@keyframes charge {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(6.5);
+  }
+}
+@keyframes changeCol {
+  0%, 0% {
+    fill: #f92b2b;
+  }
+  25% {
+    fill: #f97e2b;
+  }
+  50% {
+    fill: #f9eb2b;
+  }
+  75% {
+    fill: #5b7a21;
+  }
+  100% {
+    fill: #217A5C;
+  }
+}
+/* barco 2 */
+.fill-2 {
+  animation: charge2 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol2 5s ease-in;
+  transform: scaleX(3.5);
+}
+
+@keyframes charge2 {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: scaleX(3.5);
+  }
+}
+@keyframes changeCol2 {
+  0%, 0% {
+    fill: #f92b2b;
+  }
+  50% {
+    fill: #f97e2b;
+  }
+  100% {
+    fill: #f9eb2b;
+  }
+}
+/* barco 3 */
+.fill-3 {
+  animation: charge3 5s cubic-bezier(0.17, 0.67, 0.54, 0.99), changeCol3 5s ease-in;
+  transform: scaleX(1.5);
+}
+
+@keyframes charge3 {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1.5);
+  }
+}
+@keyframes changeCol3 {
+  0%, 50% {
+    fill: #f92b2b;
+  }
+  100% {
+    fill: #f97e2b;
+  }
+}
+/* boton cards barcos */
+.css-button-arrow--green {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  right: 20px;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffbb33;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.css-button-arrow--green:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.css-button-arrow--green:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.css-button-arrow--green:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+/* seccion about us */
+.aboutus-container {
+  background: #020024;
+  background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+  padding: 70px 550px;
+}
+
+.titulo-aboutus {
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  padding-bottom: 20px;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.parrafo-aboutus {
+  display: flex;
+  justify-content: center !important;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+.subtitulo-aboutus {
+  display: flex;
+  justify-content: center !important;
+  font-size: 50px;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffbb33;
+}
+
+/* seccion que hacemos */
+.quehacemos {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 70px 550px;
+}
+
+/* .box1 {
+    background-color: rgba(161, 161, 161, 0.3);
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 1; 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 25px 25px; 
+}  */
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+/* sustentabilidad */
+.sustentabilidad {
+  padding: 70px 550px;
+}
+
+/* seccion mapa */
+.mapa {
+  background: #020024;
+  background: linear-gradient(200deg, white 0%, #217A5C 41%, #020024 100%);
+  padding: 100px 550px;
+}
+
+/* botones sticky */
+.floating-buttons {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.floating-buttons ul {
+  list-style: none !important;
+}
+
+.floating-buttons li {
+  display: block;
+  margin-bottom: 10px !important;
+}
+
+.floating-buttons a {
+  background-color: #ffbb33;
+  display: block !important;
+  padding: 8px 10px !important;
+  text-align: center;
+  color: white;
+  border-radius: 6px;
+  filter: drop-shadow(0 0 0.5rem black) !important;
+  text-decoration: none !important;
+}
+
+.floating-buttons a:hover {
+  color: #217A5C !important;
+  transition: 1s;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: -webkit-radial-gradient(#217a5c, #051d12) !important;
+  background: -moz-radial-gradient(#217a5c, #051d12) !important;
+}
+
+#footer-title {
+  color: #f97e2b;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: underline;
+  color: #f97e2b;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 5px;
+  text-align: left;
+  border: 1px solid white;
+}
+
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #f97e2b;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #f37019;
+}
+
+#footer .copyright-wrap {
+  border-top: 1px solid #f97e2b;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #fff;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-decoration: none;
+}
+
+.seccion-legales {
+  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background-position: top;
+  background-size: cover;
+  padding: 70px 550px;
+}
+
+.boton-mas-info {
+  position: relative;
+  left: 330px;
+}
+
+.boton-legales {
+  background-color: #ffbb33 !important;
+}
+
+.modal-header {
+  background-color: #217a5c !important;
+}
+
+.color-font {
+  color: #000 !important;
+  filter: drop-shadow(0 0 0.8rem black);
+}
+
+/* https://i.ibb.co/PWhs9RZ/heap-of-pearl-barley-grains-vegetarian-food-2-min.jpg */
+
+/*# sourceMappingURL=style.css.map */

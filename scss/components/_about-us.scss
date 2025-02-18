@@ -1,0 +1,35 @@
+/* seccion about us */
+
+.aboutus-container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(337deg, rgba(2, 0, 36, 1) 0%, #07291a 41%, #217A5C 100%);
+    padding: 70px 550px;
+}
+
+.titulo-aboutus {
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+    padding-bottom: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+}
+
+.parrafo-aboutus {
+    display: flex;
+    justify-content: center !important;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    filter: drop-shadow(0 0 0.5rem black);
+}
+
+.subtitulo-aboutus {
+    display: flex;
+    justify-content: center !important;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffbb33;
+}

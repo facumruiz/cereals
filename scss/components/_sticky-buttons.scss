@@ -1,0 +1,36 @@
+/* botones sticky */
+
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 4;
+}
+
+.floating-buttons ul {
+    list-style: none !important;
+}
+
+.floating-buttons li {
+    display: block;
+    margin-bottom: 10px !important;
+}
+
+.floating-buttons a {
+    background-color: #ffbb33;
+    display: block !important;
+    padding: 8px 10px !important;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    filter: drop-shadow(0 0 0.5rem black) !important;
+    text-decoration: none !important;
+}
+
+.floating-buttons a:hover {
+    color: #217A5C !important;
+    transition: 1s;
+}

@@ -1,0 +1,245 @@
+/* seccion cards */
+.card {
+    color: white;
+    filter: drop-shadow(0 0 0.5rem black);
+    padding: 30px;
+    border-radius: 15px !important;
+}
+
+.card-productos {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+    background-position: top;
+    background-size: cover;
+    padding: 100px 150px;
+}
+
+.card-imagen1 {
+    background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen2 {
+    background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen3 {
+    background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+    background-size: 450px;
+}
+
+.card-imagen4 {
+    background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+    background-size: 430px;
+}
+
+.card-title {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40px;
+    padding-bottom: 10px;
+    filter: drop-shadow(0 0 0.5rem black);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-text {
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    top: 15px;
+    text-align: center !important;
+}
+
+.imagen-container {
+    position: relative !important;
+    display: inline-block !important;
+    text-align: center !important;
+}
+
+.imagen-productos {
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px !important;
+}
+
+/* cards barcos */
+
+.seccion-barcos {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/888148126454657085/barco1.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 100px 180px;
+}
+
+.card-barcos {
+    filter: drop-shadow(0 0 0.5rem black);
+}
+
+.titulo-barcos {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $amarillo;
+}
+
+.parrafo-barcos {
+    display: flex;
+    justify-content: center !important;
+    font-size: 22px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $amarillo;
+}
+
+.subtitulo-barcos {
+    display: flex;
+    justify-content: center !important;
+    font-size: 55px;
+    font-family: 'Titillium Web', sans-serif;
+    color: $verde-oscuro;
+}
+
+/* progress bar */
+
+.img-svg {
+    position: relative;
+    right: 102px;
+}
+
+/* barco 1 */
+.fill-1 {
+    animation: charge 5s cubic-bezier(.17, .67, .54, .99), changeCol 5s ease-in;
+    transform: scaleX(6.5);
+}
+
+@keyframes charge {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(6.5);
+    }
+
+}
+
+@keyframes changeCol {
+
+    0%,
+    0%{
+        fill: #f92b2b;
+    }
+    25% {
+        fill: #f97e2b;
+    }
+    50%{
+        fill: #f9eb2b;
+    }
+    75%{
+        fill: #5b7a21;
+    }
+    100% {
+        fill: #217A5C;
+    }
+}
+
+/* barco 2 */
+.fill-2 {
+    animation: charge2 5s cubic-bezier(.17, .67, .54, .99), changeCol2 5s ease-in;
+    transform: scaleX(3.5);
+}
+
+@keyframes charge2 {
+    0%{
+        transform: none;
+    }
+    100% {
+        transform: scaleX(3.5);
+    }
+}
+
+@keyframes changeCol2 {
+
+    0%,
+    0%{
+        fill: #f92b2b;
+    }
+    50% {
+        fill: #f97e2b;
+    }
+    100%{
+        fill: #f9eb2b;
+    }
+}
+
+/* barco 3 */
+.fill-3 {
+    animation: charge3 5s cubic-bezier(.17, .67, .54, .99), changeCol3 5s ease-in;
+    transform: scaleX(1.5);
+}
+
+@keyframes charge3 {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1.5);
+    }
+}
+
+@keyframes changeCol3 {
+
+    0%,
+    50%{
+        fill: #f92b2b;
+    }
+    100% {
+        fill: #f97e2b;
+    }
+}
+
+/* boton cards barcos */
+.css-button-arrow--green {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 20px;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: $amarillo;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.css-button-arrow--green:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.css-button-arrow--green:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.css-button-arrow--green:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}

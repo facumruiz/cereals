@@ -1,0 +1,43 @@
+/* header */
+nav {
+    background: -webkit-radial-gradient($verde-oscuro, #051d12) !important;
+    background: -moz-radial-gradient($verde-oscuro, #051d12) !important;
+}
+
+.imagen-header {
+    position: relative;
+    left: 250px;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: $amarillo !important;
+    transition: 1s;
+}
+
+.menu-principal {
+    margin: 15px;
+}
+
+.menu {
+    display: flex;
+    text-align: right !important;
+    font-size: 25px;
+    position: relative;
+    right: 335px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.bandera-menu:hover {
+    transform: scale(1.3) !important;
+    transition: 1s;
+    border-radius: 3px;
+}
+
+.login {
+    position: relative;
+    left: -80px;
+}

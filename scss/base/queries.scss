@@ -1,0 +1,536 @@
+/* MOBILE STYLES */
+@media only screen and (max-width: 450px){
+
+    /* HEADER */
+    .imagen-header {
+        text-align: left !important;
+        height: 60px !important;
+        position: static !important;
+    }
+
+    .navbar-toggler{
+        background-color: $amarillo !important;
+        border-radius: 20px !important;
+        text-align: left !important;
+
+        .navbar-toggler-icon{
+            font-size: 15px !important;
+            color: $verde-oscuro;
+            text-align: left !important;
+        }
+    }
+    
+    .nav-link {
+        color: #fff !important;
+    }
+    
+    .nav-link:hover {
+        color: $amarillo !important;
+        transition: 1s;
+    }
+
+    .navbar-nav{
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    .menu-principal {
+        margin: 0px !important;
+    }
+    
+    .menu {
+        display: flex;
+        justify-content: center !important;
+        font-size: 18px !important;
+        position: static !important;
+        font-family: 'Titillium Web', sans-serif;
+    }
+    
+    .bandera-menu:hover {
+        transform: scale(1.3) !important;
+        transition: 1s;
+        border-radius: 3px;
+    }
+    
+    .login {
+        position: static;
+    }
+
+    .banderas-mobile{
+        position: relative;
+        right: 10px !important;
+    }
+
+    /* CARPOUSEL */
+    .img-carousel{
+        height: 300px;
+    }
+
+    .titulo-carousel {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 25px !important;
+        position: relative !important;
+        bottom: 45px !important;
+        filter: drop-shadow(0 0 0.5rem black);
+    }
+
+    /* CARDS */
+    .card-productos {
+        background-color: white;
+        padding: 10px 0px !important;
+    }
+
+    .card {
+        color: white;
+        filter: drop-shadow(0 0 0.5rem black);
+        border-radius: 15px !important;
+    }
+
+    .card-imagen1 {
+        background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+        background-size: 100px;
+    }
+
+    .card-imagen2 {
+        background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+        background-size: 100px;
+    }
+
+    .card-imagen3 {
+        background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+        background-size: 100px;
+    }
+
+    .card-imagen4 {
+        background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+        background-size: 100px;  
+    }
+
+    .card-title {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 40px;
+        padding-top: 25px !important;
+        filter: drop-shadow(0 0 0.5rem black);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-text {
+        font-size: 18px !important;
+        font-family: 'Titillium Web', sans-serif;
+        position: relative;
+        top: 15px;
+        text-align: center !important;
+    }
+
+    .imagen-container {
+        position: relative !important;
+        display: inline-block !important;
+        text-align: center !important;
+    }
+
+    .imagen-productos {
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px !important;
+    }
+
+    .seccion-barcos {
+        padding: 100px 0px !important;
+    }
+
+    .img-svg {
+        position: relative !important;
+        right: 12% !important;
+    }
+
+    .card-barcos {
+        filter: drop-shadow(0 0 0.5rem black);
+        margin-top: 15px !important;
+    }
+
+    /* ABOUT US */
+    .aboutus-container {
+        background: rgb(2, 0, 36);
+        background: linear-gradient(337deg, rgba(2, 0, 36, 1) 0%, #07291a 41%, #217A5C 100%);
+        padding: 0 20px !important;
+        text-align: center !important;
+    }
+    
+    .titulo-aboutus {
+        display: flex;
+        justify-content: center;
+        font-size: 40px !important;
+        padding-bottom: 25px;
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+        filter: drop-shadow(0 0 0.5rem black);
+    }
+    
+    .parrafo-aboutus {
+        display: flex;
+        justify-content: center !important;
+        text-align: center;
+        font-size: 15px !important;
+        color: white;
+        font-family: 'Titillium Web', sans-serif;
+        filter: drop-shadow(0 0 0.5rem black);
+        margin-bottom: 0px !important;
+    }
+    
+    .subtitulo-aboutus {
+        display: flex;
+        justify-content: center;
+        font-size: 25px !important;
+        font-family: 'Titillium Web', sans-serif;
+        color: #ffbb33;
+        margin-bottom: -1px !important;
+    }
+
+    /* QUE HACEMOS */
+    .quehacemos {
+        background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover; 
+        padding: 20px 20px !important;
+    }
+    
+    /* .box1 {
+        background-color: rgba(161, 161, 161, 0.3);
+        border-radius: 5px; 
+        text-align: center; 
+        line-height: 1; 
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        padding: 25px 25px; 
+    }  */ 
+    
+    
+    .container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* LEGALES */
+    .seccion-legales {
+        background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+        background-position: top;
+        background-size: cover; 
+        padding: 20px 20px !important;
+    }
+    
+    .boton-mas-info {
+        position: static !important;
+        display: flex !important;
+    }
+    
+    .boton-legales {
+        background-color: $amarillo !important;
+    }
+    
+    .modal-header {
+        background-color: $verde-oscuro !important;
+    }
+    
+    .color-font{
+        color: #000 !important;
+        filter: drop-shadow(0 0 0.8rem black)
+    }
+}
+/* FIN MOBILE STYLES */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* MACBOOK 13" STYLES */
+@media only screen and (min-width: 1000px) and (max-width: 1700px){
+        /* HEADER */
+        .imagen-header {
+            text-align: left !important;
+            height: 120px !important;
+            position: static !important;
+            padding-left: 150px;
+        }
+        
+        .nav-link {
+            color: #fff !important;
+        }
+        
+        .nav-link:hover {
+            color: $amarillo !important;
+            transition: 1s;
+        }
+    
+        .navbar-nav{
+            display: flex !important;
+            justify-content: center !important;
+            padding-right: 80px !important;
+        }
+        
+        .menu-principal {
+            margin: 0px !important;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: center !important;
+            font-size: 20px !important;
+            position: static !important;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .lenguajes-login{
+            padding-left: 35px !important;
+        }
+        
+        .bandera-menu:hover {
+            transform: scale(1.3) !important;
+            transition: 1s;
+            border-radius: 3px;
+        }
+        
+        .login {
+            position: static;
+        }
+    
+        .banderas-mobile{
+            position: relative;
+            right: 10px !important;
+        }
+    
+        /* CAROUSEL */
+        .img-carousel{
+            height: 650px;
+        }
+    
+        .titulo-carousel {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 70px;
+            position: relative;
+            bottom: 150px !important;
+            filter: drop-shadow(0 0 0.5rem black);
+        }
+    
+        /* CARDS */
+        .card {
+            color: white;
+            filter: drop-shadow(0 0 0.5rem black);
+            padding: 50px 10px !important;
+            border-radius: 15px !important;
+            width: 80%;
+            margin: 0 auto !important;
+        }
+        
+        .card-imagen1 {
+            background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+            background-size: 650px !important;
+        }
+        
+        .card-imagen2 {
+            background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+            background-size: 650px !important;
+        }
+        
+        .card-imagen3 {
+            background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+            background-size: 650px !important;
+        }
+        
+        .card-imagen4 {
+            background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+            background-size: 630px !important;  
+        }
+        
+        .card-title {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 40px;
+            padding-bottom: 10px;
+            filter: drop-shadow(0 0 0.5rem black);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .card-text {
+            font-size: 20px;
+            font-family: 'Titillium Web', sans-serif;
+            position: relative;
+            top: 15px;
+            text-align: center !important;
+        }
+
+        .btn-compra{
+            position: relative !important;
+            left: 29% !important;
+        }
+        
+        .imagen-container {
+            position: relative !important;
+            display: inline-block !important;
+            text-align: center !important;
+        }
+        
+        .imagen-productos {
+            border-bottom-left-radius: 30px;
+            border-top-right-radius: 30px !important;
+        }
+
+        /* progress bar */
+
+        .img-svg {
+            position: relative;
+            right: 4% !important;
+        }
+    
+        /* ABOUT US */
+        .aboutus-container {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(337deg, rgba(2, 0, 36, 1) 0%, #07291a 41%, #217A5C 100%);
+            padding: 100px 200px !important;
+            text-align: center !important;
+        }
+        
+        .titulo-aboutus {
+            display: flex;
+            justify-content: center;
+            font-size: 60px !important;
+            padding-bottom: 25px;
+            font-family: 'Titillium Web', sans-serif;
+            color: white;
+            filter: drop-shadow(0 0 0.5rem black);
+        }
+        
+        .parrafo-aboutus {
+            display: flex;
+            justify-content: center !important;
+            text-align: center;
+            font-size: 22px !important;
+            color: white;
+            font-family: 'Titillium Web', sans-serif;
+            filter: drop-shadow(0 0 0.5rem black);
+        }
+        
+        .subtitulo-aboutus {
+            display: flex;
+            justify-content: center;
+            font-size: 45px !important;
+            font-family: 'Titillium Web', sans-serif;
+            color: #ffbb33;
+            margin-bottom: -1px !important;
+        }
+    
+        /* QUE HACEMOS */
+        .quehacemos {
+            background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover; 
+            padding: 100px 180px !important;
+        }
+        
+        /* .box1 {
+            background-color: rgba(161, 161, 161, 0.3);
+            border-radius: 5px; 
+            text-align: center; 
+            line-height: 1; 
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            padding: 25px 25px; 
+        }  */ 
+        
+        
+        .container {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        
+    /* LEGALES */
+    .seccion-legales {
+        padding: 100px 180px !important;
+    }
+
+    .boton-mas-info {
+        position: relative;
+        left: 830px !important;
+    }
+    
+}
+/* FIN MACBOOK PRO 13" STYLES */
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* DESKTOP STYLES */
+@media only screen and (min-width: 1701px) and (max-width: 1970px){
+            /* CARDS */
+            .card {
+                color: white;
+                filter: drop-shadow(0 0 0.5rem black);
+                padding: 50px 100px !important;
+                border-radius: 15px !important;
+                width: 80%;
+                margin: 0 auto !important;
+            }
+            
+            .card-imagen1 {
+                background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen2 {
+                background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen3 {
+                background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
+                background-size: 650px !important;
+            }
+            
+            .card-imagen4 {
+                background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
+                background-size: 630px !important;  
+            }
+            
+            .card-title {
+                font-family: 'Titillium Web', sans-serif;
+                font-size: 40px;
+                padding-bottom: 10px;
+                filter: drop-shadow(0 0 0.5rem black);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            
+            .card-text {
+                font-size: 20px;
+                font-family: 'Titillium Web', sans-serif;
+                position: relative;
+                top: 15px;
+                text-align: center !important;
+            }
+            
+            .imagen-container {
+                position: relative !important;
+                display: inline-block !important;
+                text-align: center !important;
+            }
+            
+            .imagen-productos {
+                border-bottom-left-radius: 30px;
+                border-top-right-radius: 30px !important;
+            }
+}
+
+
+

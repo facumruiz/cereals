@@ -1,0 +1,24 @@
+.seccion-legales {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+    background-position: top;
+    background-size: cover; 
+    padding: 70px 550px;
+}
+
+.boton-mas-info {
+    position: relative;
+    left: 330px;
+}
+
+.boton-legales {
+    background-color: $amarillo !important;
+}
+
+.modal-header {
+    background-color: $verde-oscuro !important;
+}
+
+.color-font{
+    color: #000 !important;
+    filter: drop-shadow(0 0 0.8rem black)
+}

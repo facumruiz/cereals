@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "base/colours.scss";
+@import "base/fonts.scss";
+@import "base/lineas.scss";
+@import "base/queries.scss";
+@import "components/spinner";
+@import "components/header";
+@import "components/carousel";
+@import "components/cards";
+@import "components/about-us";
+@import "components/que-hacemos";
+@import "components/sustentabilidad";
+@import "components/map";
+@import "components/sticky-buttons";
+@import "components/footer";
+@import "components/legales";
+
+
+
+
+
+/* https://i.ibb.co/PWhs9RZ/heap-of-pearl-barley-grains-vegetarian-food-2-min.jpg */

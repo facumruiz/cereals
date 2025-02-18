@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta etiquetas -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/f2f2acd656.js" crossorigin="anonymous"></script>
+  <!-- iluminacion palabras -->
+  <style>
+    ::-moz-selection {
+      /* Code for Firefox */
+      color: #ffbb33;
+      background: #217A5C;
+    }
+
+    ::selection {
+      color: #ffbb33;
+      background: #217A5C;
+    }
+  </style>
+
+  <!-- CONTADOR -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+
+
+  <!-- titulo de página -->
+  <title>Cereals Online</title>
+</head>
+
+<body>
+
+  <!-- SPINNER LOADING -->
+  <div id="loading" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+
+  <div id="cuerpo" style="display: none !important;">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="index" href="index.html"><img src="img/Logo-final.png" height="145"
+              class="imagen-header" alt="logo de cereals"></a>
+          <ul class="navbar-nav banderas-mobile align-items-center justify-content-center">
+            <div class="d-flex d-lg-none">
+              <li class="nav-item mx-1 mx-sm-0">
+                <a class="nav-link menu login" href="#"><img src="img/br.png" class="bandera-menu" height="16"
+                    alt="bandera de Brasil"></a>
+              </li>
+              <li class="nav-item mx-1 mx-sm-0">
+                <a class="nav-link menu login" href="#"><img src="img/fr.png" class="bandera-menu" height="16"
+                    alt="bandera de Francia"></a>
+              </li>
+              <li class="nav-item mx-1 mx-sm-0">
+                <a class="nav-link menu login" href="#"><img src="img/esp.svg" class="bandera-menu" height="16"
+                    alt="bandera de España"></a>
+              </li>
+              <li class="nav-item mx-1 mx-sm-0">
+                <a class="nav-link menu login" href="#"><img src="img/gb.png" class="bandera-menu" height="16"
+                    alt="bandera de Gran Bretaña"></a>
+              </li>
+            </div>
+          </ul>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a class="nav-link menu menu-principal" href="#aboutus">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu menu-principal" href="#quehacemos">¿Qué hacemos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu menu-principal" href="#sustentabilidad">Sustentabilidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu menu-principal" href="#legales">Legales</a>
+              </li>
+              <div class="d-none d-sm-flex lenguajes-login">
+                <li class="nav-item mx-1 mx-sm-0">
+                  <a class="nav-link menu login" href="#"><img src="img/br.png" class="bandera-menu" height="16"
+                      alt="bandera de Brasil"></a>
+                </li>
+                <li class="nav-item mx-1 mx-sm-0">
+                  <a class="nav-link menu login" href="#"><img src="img/fr.png" class="bandera-menu" height="16"
+                      alt="bandera de Francia"></a>
+                </li>
+                <li class="nav-item mx-1 mx-sm-0">
+                  <a class="nav-link menu login" href="#"><img src="img/esp.svg" class="bandera-menu" height="16"
+                      alt="bandera de España"></a>
+                </li>
+                <li class="nav-item mx-1 mx-sm-0">
+                  <a class="nav-link menu login" href="#"><img src="img/gb.png" class="bandera-menu" height="16"
+                      alt="bandera de Gran Bretaña"></a>
+                </li>
+              </div>
+              <div class="d-flex">
+                <li class="nav-item">
+                  <a class="nav-link menu login" href="#">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu login mx-2 mx-lg-0" href="#">|</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu login" href="#">SIGN UP</a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+
+    <section class="linea-container">
+    </section>
+
+    <!-- seccion carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ibb.co/drtpnSf/vegetable-rows-of-pepper-grow-in-the-field-farming-agriculture-2-min.jpg"
+            height="850" class="d-block w-100 img-carousel" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5 class="titulo-carousel">Ahora puede adquirir cereales como un importador directo, reduciendo sus costos.
+            </h5>
+            <p class="parrafo-video"></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ibb.co/q9SHrLy/green-leaves-and-beans-of-young-soybeans-in-the-field-2-min.jpg"
+            height="850" class="d-block w-100 img-carousel" alt="...">
+          <div class="carousel-caption d-block d-md-block">
+            <h5 class="titulo-carousel">Ordene sus productos en línea de manera inteligente.</h5>
+            <p class="parrafo-video"></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.ibb.co/n1T8ysx/close-up-picture-of-ripe-golden-wheat-under-bright-evening-light-in-the-field-3-min.jpg"
+            alt="" height="850" class="d-block w-100 img-carousel">
+          <div class="carousel-caption d-block d-md-block">
+            <h5 class="titulo-carousel">CerealsOnline ofrece los costos más bajos para importar sus productos.</h5>
+            <p class="parrafo-video"></p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="productos" class="linea-container">
+    </section>
+
+    <!-- seccion cards productos -->
+    <div class="card-productos">
+      <section class="container  mt-5 mb-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card border-warning card-imagen1 mb-3">
+              <div class="imagen-container">
+                <h5 class="card-title text-center">Maiz</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-warning card-imagen2 mb-3">
+              <div class="imagen-container">
+                <h5 class="card-title text-center">Soja</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-warning card-imagen3 mb-3">
+              <div class="imagen-container">
+                <h5 class="card-title text-center">Cebada</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-warning card-imagen4 mb-3">
+              <div class="imagen-container">
+                <h5 class="card-title text-center">Harina</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                  content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="linea-container">
+    </section>
+
+    <!-- cards barcos -->
+    <!-- barco 1 -->
+    <section class="seccion-barcos">
+      <div class="container d-flex flex-wrap wrap d-inline-block">
+        <div class="card card-barcos mx-auto" style="width: 20rem; height: 35rem;">
+          <h2 class="titulo-barcos">Maíz</h2>
+          <svg class="img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768" width="330" height="320"
+            fill="white" stroke="white" stroke-miterlimit="10" stroke-width="18"
+            style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+            <g>
+              <rect x="10" y="270" width="1300" height="290" fill="black" />
+              <rect class="fill-1" x="1" y="200" fill="#217A5C" width="200" height="500" stroke="#000000"
+                stroke-width="1" stroke-miterlimit="10" />
+              <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
+        c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
+        c-0.1,132.7-0.1,265.3-0.1,398c-4.2-1.4-3-5-3-7.8c-0.2-17.7-0.1-35.4-0.1-53.1c0-8.6-0.1-8.8-8.9-8.6c-23.2,0.6-46.3-1-69.4-1.3
+        c-7.6-0.1-8.9-1.3-8.9-8.8c-0.1-12.9,0-25.8-0.1-38.7c0-8-0.7-8.7-8.5-8.7c-19.2-0.1-38.3,0-57.5,0c-3.5,0-6.5,0.5-9,3.5
+        c-2.7,3.2-6.1,2.8-8.7-0.2c-2.5-2.9-5.7-3.7-9.1-3.2c-9.3,1.4-19-0.4-27.9,3.7c-1.2,0.5-2.5,0.6-3.7,0c-10.7-4.9-22-2.4-33-2
+        c-5.4,0.2-11.5,2.2-15.6,6.9c-2.7,3.1-6.4,2.8-9.9,2.2c-3.8-0.6-3.8-3.8-4.5-6.7c-2.2-10.7-0.2-21.6-2.3-32.3
+        c-1.2-6.5-3.2-12.7-4.6-19.2c-3.2,0.6-3.1,3.2-4.2,4.8c-1.6,2.2-3.7,2.5-6.1,2.1c-2.3-0.4-2.9-2.1-3-4.1c0-0.8-0.1-1.7-0.3-2.5
+        c-0.6-2.3-1.6-4.7-4.1-4.9c-2.7-0.2-3.3,2.5-3.6,4.4c-0.8,5.8-5.9,9.4-7.2,15c-0.7,3-3.1,3-5.1,0.4c-1.1-1.5-2.1-3.2-2.6-5
+        c-2.6-8.8-6-17.2-3.3-27c1.3-4.7-2.1-10.2-0.8-15.6c0-0.2,0.3-0.3,0.4-0.5c-0.8-0.5-0.5,0.5-1,0.6c-1.1,2.1-2.1,4.3-4.9,4.5
+        c-2.9,2.7-1.4,6-1.1,9c1.2,13.1-1.5,25.6-5.2,38c-1.4,4.7-6.1,6.1-10.7,6.3c-2.9,0.1-4.7-1.5-4.7-4.6c-0.1-4-0.1-7.9,1.2-11.7
+        c0.5-1.5,1.7-3-0.2-4.6c-2.7,0.9-1.5,2.9-1.4,4.6c0.4,5.4,1.2,10.8-0.9,15.9c-1.1,2.6,0.1,4.4,1.6,6.2c3.6,4.2,4.7,9.1,4.7,14.5
+        c-0.1,13.5-0.2,27.1,0,40.6c0.1,5.9-2.2,9.9-7.5,12.5c-3.6,1.8-7,3.9-10.9,4.9c-3.3,0.9-6,2.7-8.6,4.9c-4.2,3.6-7.9,2.4-8.1-3.1
+        c-0.2-5.9-2.1-10.5-5.6-15.3c-2.6-3.5-5.2-4.3-9-4.2c-17.1,0.1-34.1,2-51.1,1.3c-4-0.2-8,0-12-0.1c-5-0.1-7.3-2.5-7.4-7.3
+        c-0.1-9.2,0-18.3-0.1-27.5c-0.1-6.9-0.7-7.6-7.6-7.6c-19.4-0.1-38.8-0.1-58.2,0c-6.9,0-7.4,0.6-7.5,7.6c0,2.7,0,5.4-0.1,8.1
+        c-0.1,3.8-0.7,7.4-5.5,7.7c-4.4,0.3-9.8,1.8-11.8-4.2c-1.2-3.5-3.6-4.2-6.8-4.2c-20.4-0.1-40.9-0.3-61.3,1.3
+        c-2.7,0.2-4.6,0.9-5.9,3.7c-2.4,5-5.6,5.6-8.1,1.1c-3.7-6.7-9.2-7.7-15.9-7.3c-18.7,1-37.4,1.8-56.2,1.3c-5.3-0.1-7.1,2.2-6.9,7.1
+        c0.7,21.7-2,43.2-1.4,64.9c0.1,3.3,1.5,8.9-3.9,8.9c-4.7,0-4.5-5.5-4.6-9c-1-18.5-2.1-37-2.7-55.5c-0.2-5.2-0.9-10.4-1.5-15.5
+        c-0.5-4.7-3.2-7.1-8-7.1c-20.2-0.1-40.5-0.1-60.7,0c-5.4,0-7.4,3.2-8,7.8c-0.5,3.9-0.3,7.9-0.2,11.9c0.6,19.8-0.9,39.5-1.4,59.3
+        c-0.1,2.4,0.4,6.2-2.5,6.2c-3.1,0-3.3-3.8-3.6-6.5c-0.3-3.9-0.3-7.9-0.1-11.9c0.7-15.4-1.5-30.8-1.4-46.2c0-0.6-0.1-1.2-0.1-1.9
+        c-1.5-13.5-3.3-15.1-17-15.1c-17.3,0-34.6-0.1-51.8,0c-7.2,0-8,0.8-8,8c-0.1,15,0,30-0.1,45c0,2.9,0.3,5.9-1.4,8.5
+        c-2.8,1.4-3.2-1-4.2-2.5c-1.1-5.9-1.5-11.9-2-17.9c-0.3-4-1.6-6.7-6-7.4c-4.2-0.6-5.2-3.6-5.3-7.3c-0.2-6.2,0-12.5-0.1-18.7
+        c-0.2-6.5-0.9-7.4-7.2-7.5c-19.8-0.2-39.6,0-59.3-0.1c-4.8,0-6.8,1.9-6.7,6.7c0.1,6.2,0.2,12.5-0.1,18.7c-0.2,4-1.3,7.7-6.3,7.6
+        c-5-0.1-6.2-3.8-6.2-7.8c0.1-10.8-0.9-10.2-11.4-10.2c-17.5,0-34.9,0-52.4,0c-7.8,0-8,0.4-8.3,8.1c-0.3,7.6-1.8,9.8-7.2,10.4
+        c-6.8,0.8-9.8-1.6-10.5-8.3c-0.8-7.5-0.8-7.7-8.2-7.6c-8,0.1-16-0.6-23.9,0.5c-2.4,0.9-2,3.2-2.6,5.1c-0.4,1.4-0.7,3.4-3.1,2.2
+        c-2.8-7.8-2.8-7.8-11.4-7.8c-5.9,0-11.7,0.2-17.6,0c-5-0.2-6.7,2-6.6,6.7c0.1,7.7,0.2,15.3-0.1,23c-0.1,2.3-0.3,4.8-2.7,5.9
+        c-2.9,1.2-3.9-1.5-5.5-3.1c-1.1-1.2-1.9-2.7-2.4-4.3c-0.4-2.3-1.3-4.4-2.4-6.5c-0.6-1.2-1.1-2.4-2.1-3.3c-0.7-0.7-1.5-1.3-2.1-2
+        c-0.3-0.4-0.5-0.8-0.7-1.2c-0.2-0.4-0.3-0.9-0.4-1.3c-0.3-0.6-0.6-1.2-1-1.8c-0.5-0.6-0.8-1.2-1.1-1.8c-0.3-0.7-0.4-1.4-0.6-2.2
+        c-0.3-1.8-1.3-3.4-2.4-4.8c-1-1.4-1.9-2.9-2.8-4.4c-8-10.5-10.5-22.4-9.1-35.2c0.2-1.8-0.1-3.7-0.2-5.7c-1.1,1.3-1.3,4-3.7,3.1
+        c-2.8-1.1-1.7-3.9-2-6.2c-0.4,4.3,1.1,7.7,3.3,11.3c4.3,7,2.8,16.3-3,23.1c-2.7,3.4-6.6,5.9-8.2,10.2c-0.7,1.3-1.7,2.3-2.9,3.2
+        c-1.9,1.1-3.6,2.4-4.3,4.6C79.1,408.2,68.7,420,58.7,432c-2.2,1.6-4,3.4-5,6.1c-1.1,1.9-2.6,3.3-4.5,4.2
+        c-6.8,2.5-13.7,1.2-20.6,0.5c-3.3-0.3-7.8-1.8-9.5,0.9c-2,3,2,5.8,3.8,8.5c11.6,17.1,23.8,33.9,35.3,51.1
+        c3.5,5.2,4.8,10.5,4.3,16.5c-0.3,3.8-1.1,7-5.8,7.6c14.7-0.4,29.2,1,43.7,1c109-0.5,217.9,1.8,326.9,1.5
+        c148.6-0.4,297.2-0.9,445.8,0.3c73.5,0.6,147.1,1.2,220.6,0.5c43.4-0.4,86.8,0.2,130.2-1.2c22.5-0.7,45.1-0.1,67.5-2.8
+        c0,0.2-0.3,0.1-0.8-0.1c-3.1-0.8-7.9,0.6-9.1-2.9c-1.3-3.9,3.5-5.6,6-8c5.1-5,10-10.1,14.5-15.7
+        C1303.7,498,1305.2,495.1,1308.9,495.5z" />
+            </g>
+          </svg>
+          <h4 class="subtitulo-barcos counter" data-count="100">0</h4>
+          <h4 class="parrafo-barcos">Destino: Brasil</h4>
+          <div class="card-body btn-compra">
+            <a href="#"><button class="css-button-arrow--green text-center">COMPRAR</button></a>
+          </div>
+        </div>
+
+        <!-- barco 2 -->
+        <div class="card card-barcos mx-auto" style="width: 20rem; height: 35rem;">
+          <h2 class="titulo-barcos">Cebada</h2>
+          <svg class="img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768" width="330" height="320"
+            fill="white" stroke="white" stroke-miterlimit="10" stroke-width="18"
+            style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+            <g>
+              <rect x="10" y="270" width="1300" height="290" fill="black" />
+              <rect class="fill-2" x="1" y="200" fill="#f9eb2b" width="200" height="500" stroke="#000000"
+                stroke-width="1" stroke-miterlimit="10" />
+              <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
+        c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
+        c-0.1,132.7-0.1,265.3-0.1,398c-4.2-1.4-3-5-3-7.8c-0.2-17.7-0.1-35.4-0.1-53.1c0-8.6-0.1-8.8-8.9-8.6c-23.2,0.6-46.3-1-69.4-1.3
+        c-7.6-0.1-8.9-1.3-8.9-8.8c-0.1-12.9,0-25.8-0.1-38.7c0-8-0.7-8.7-8.5-8.7c-19.2-0.1-38.3,0-57.5,0c-3.5,0-6.5,0.5-9,3.5
+        c-2.7,3.2-6.1,2.8-8.7-0.2c-2.5-2.9-5.7-3.7-9.1-3.2c-9.3,1.4-19-0.4-27.9,3.7c-1.2,0.5-2.5,0.6-3.7,0c-10.7-4.9-22-2.4-33-2
+        c-5.4,0.2-11.5,2.2-15.6,6.9c-2.7,3.1-6.4,2.8-9.9,2.2c-3.8-0.6-3.8-3.8-4.5-6.7c-2.2-10.7-0.2-21.6-2.3-32.3
+        c-1.2-6.5-3.2-12.7-4.6-19.2c-3.2,0.6-3.1,3.2-4.2,4.8c-1.6,2.2-3.7,2.5-6.1,2.1c-2.3-0.4-2.9-2.1-3-4.1c0-0.8-0.1-1.7-0.3-2.5
+        c-0.6-2.3-1.6-4.7-4.1-4.9c-2.7-0.2-3.3,2.5-3.6,4.4c-0.8,5.8-5.9,9.4-7.2,15c-0.7,3-3.1,3-5.1,0.4c-1.1-1.5-2.1-3.2-2.6-5
+        c-2.6-8.8-6-17.2-3.3-27c1.3-4.7-2.1-10.2-0.8-15.6c0-0.2,0.3-0.3,0.4-0.5c-0.8-0.5-0.5,0.5-1,0.6c-1.1,2.1-2.1,4.3-4.9,4.5
+        c-2.9,2.7-1.4,6-1.1,9c1.2,13.1-1.5,25.6-5.2,38c-1.4,4.7-6.1,6.1-10.7,6.3c-2.9,0.1-4.7-1.5-4.7-4.6c-0.1-4-0.1-7.9,1.2-11.7
+        c0.5-1.5,1.7-3-0.2-4.6c-2.7,0.9-1.5,2.9-1.4,4.6c0.4,5.4,1.2,10.8-0.9,15.9c-1.1,2.6,0.1,4.4,1.6,6.2c3.6,4.2,4.7,9.1,4.7,14.5
+        c-0.1,13.5-0.2,27.1,0,40.6c0.1,5.9-2.2,9.9-7.5,12.5c-3.6,1.8-7,3.9-10.9,4.9c-3.3,0.9-6,2.7-8.6,4.9c-4.2,3.6-7.9,2.4-8.1-3.1
+        c-0.2-5.9-2.1-10.5-5.6-15.3c-2.6-3.5-5.2-4.3-9-4.2c-17.1,0.1-34.1,2-51.1,1.3c-4-0.2-8,0-12-0.1c-5-0.1-7.3-2.5-7.4-7.3
+        c-0.1-9.2,0-18.3-0.1-27.5c-0.1-6.9-0.7-7.6-7.6-7.6c-19.4-0.1-38.8-0.1-58.2,0c-6.9,0-7.4,0.6-7.5,7.6c0,2.7,0,5.4-0.1,8.1
+        c-0.1,3.8-0.7,7.4-5.5,7.7c-4.4,0.3-9.8,1.8-11.8-4.2c-1.2-3.5-3.6-4.2-6.8-4.2c-20.4-0.1-40.9-0.3-61.3,1.3
+        c-2.7,0.2-4.6,0.9-5.9,3.7c-2.4,5-5.6,5.6-8.1,1.1c-3.7-6.7-9.2-7.7-15.9-7.3c-18.7,1-37.4,1.8-56.2,1.3c-5.3-0.1-7.1,2.2-6.9,7.1
+        c0.7,21.7-2,43.2-1.4,64.9c0.1,3.3,1.5,8.9-3.9,8.9c-4.7,0-4.5-5.5-4.6-9c-1-18.5-2.1-37-2.7-55.5c-0.2-5.2-0.9-10.4-1.5-15.5
+        c-0.5-4.7-3.2-7.1-8-7.1c-20.2-0.1-40.5-0.1-60.7,0c-5.4,0-7.4,3.2-8,7.8c-0.5,3.9-0.3,7.9-0.2,11.9c0.6,19.8-0.9,39.5-1.4,59.3
+        c-0.1,2.4,0.4,6.2-2.5,6.2c-3.1,0-3.3-3.8-3.6-6.5c-0.3-3.9-0.3-7.9-0.1-11.9c0.7-15.4-1.5-30.8-1.4-46.2c0-0.6-0.1-1.2-0.1-1.9
+        c-1.5-13.5-3.3-15.1-17-15.1c-17.3,0-34.6-0.1-51.8,0c-7.2,0-8,0.8-8,8c-0.1,15,0,30-0.1,45c0,2.9,0.3,5.9-1.4,8.5
+        c-2.8,1.4-3.2-1-4.2-2.5c-1.1-5.9-1.5-11.9-2-17.9c-0.3-4-1.6-6.7-6-7.4c-4.2-0.6-5.2-3.6-5.3-7.3c-0.2-6.2,0-12.5-0.1-18.7
+        c-0.2-6.5-0.9-7.4-7.2-7.5c-19.8-0.2-39.6,0-59.3-0.1c-4.8,0-6.8,1.9-6.7,6.7c0.1,6.2,0.2,12.5-0.1,18.7c-0.2,4-1.3,7.7-6.3,7.6
+        c-5-0.1-6.2-3.8-6.2-7.8c0.1-10.8-0.9-10.2-11.4-10.2c-17.5,0-34.9,0-52.4,0c-7.8,0-8,0.4-8.3,8.1c-0.3,7.6-1.8,9.8-7.2,10.4
+        c-6.8,0.8-9.8-1.6-10.5-8.3c-0.8-7.5-0.8-7.7-8.2-7.6c-8,0.1-16-0.6-23.9,0.5c-2.4,0.9-2,3.2-2.6,5.1c-0.4,1.4-0.7,3.4-3.1,2.2
+        c-2.8-7.8-2.8-7.8-11.4-7.8c-5.9,0-11.7,0.2-17.6,0c-5-0.2-6.7,2-6.6,6.7c0.1,7.7,0.2,15.3-0.1,23c-0.1,2.3-0.3,4.8-2.7,5.9
+        c-2.9,1.2-3.9-1.5-5.5-3.1c-1.1-1.2-1.9-2.7-2.4-4.3c-0.4-2.3-1.3-4.4-2.4-6.5c-0.6-1.2-1.1-2.4-2.1-3.3c-0.7-0.7-1.5-1.3-2.1-2
+        c-0.3-0.4-0.5-0.8-0.7-1.2c-0.2-0.4-0.3-0.9-0.4-1.3c-0.3-0.6-0.6-1.2-1-1.8c-0.5-0.6-0.8-1.2-1.1-1.8c-0.3-0.7-0.4-1.4-0.6-2.2
+        c-0.3-1.8-1.3-3.4-2.4-4.8c-1-1.4-1.9-2.9-2.8-4.4c-8-10.5-10.5-22.4-9.1-35.2c0.2-1.8-0.1-3.7-0.2-5.7c-1.1,1.3-1.3,4-3.7,3.1
+        c-2.8-1.1-1.7-3.9-2-6.2c-0.4,4.3,1.1,7.7,3.3,11.3c4.3,7,2.8,16.3-3,23.1c-2.7,3.4-6.6,5.9-8.2,10.2c-0.7,1.3-1.7,2.3-2.9,3.2
+        c-1.9,1.1-3.6,2.4-4.3,4.6C79.1,408.2,68.7,420,58.7,432c-2.2,1.6-4,3.4-5,6.1c-1.1,1.9-2.6,3.3-4.5,4.2
+        c-6.8,2.5-13.7,1.2-20.6,0.5c-3.3-0.3-7.8-1.8-9.5,0.9c-2,3,2,5.8,3.8,8.5c11.6,17.1,23.8,33.9,35.3,51.1
+        c3.5,5.2,4.8,10.5,4.3,16.5c-0.3,3.8-1.1,7-5.8,7.6c14.7-0.4,29.2,1,43.7,1c109-0.5,217.9,1.8,326.9,1.5
+        c148.6-0.4,297.2-0.9,445.8,0.3c73.5,0.6,147.1,1.2,220.6,0.5c43.4-0.4,86.8,0.2,130.2-1.2c22.5-0.7,45.1-0.1,67.5-2.8
+        c0,0.2-0.3,0.1-0.8-0.1c-3.1-0.8-7.9,0.6-9.1-2.9c-1.3-3.9,3.5-5.6,6-8c5.1-5,10-10.1,14.5-15.7
+        C1303.7,498,1305.2,495.1,1308.9,495.5z" />
+            </g>
+          </svg>
+          <h4 class="subtitulo-barcos counter" data-count="50">0</h4>
+          <h4 class="parrafo-barcos">Destino: España</h4>
+          <div class="card-body btn-compra">
+            <a href="#"><button class="css-button-arrow--green">COMPRAR</button></a>
+          </div>
+        </div>
+
+        <!-- barco 3 -->
+        <div class="card card-barcos mx-auto" style="width: 20rem; height: 35rem;">
+          <h2 class="titulo-barcos">Soja</h2>
+          <svg class="img-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1366 768" width="330" height="320"
+            fill="white" stroke="white" stroke-miterlimit="10" stroke-width="18"
+            style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+            <g>
+              <rect x="10" y="270" width="1300" height="290" fill="black" />
+              <rect class="fill-3" x="1" y="200" fill="#f97e2b" width="200" height="500" stroke="#000000"
+                stroke-width="1" stroke-miterlimit="10" />
+              <path d="M1308.9,495.5c0,75,0,150,0.1,224.9c0,4.2-0.7,5.2-5.1,5.2c-428.7-0.1-857.4-0.1-1286.1,0
+        c-4.7,0-5.4-1.2-5.4-5.5c0.1-210.1,0.1-420.3,0-630.4c0-4.4,0.8-5.5,5.5-5.5c428.5,0.1,856.9,0.1,1285.4,0c4.9,0,5.7,1.3,5.7,5.8
+        c-0.1,132.7-0.1,265.3-0.1,398c-4.2-1.4-3-5-3-7.8c-0.2-17.7-0.1-35.4-0.1-53.1c0-8.6-0.1-8.8-8.9-8.6c-23.2,0.6-46.3-1-69.4-1.3
+        c-7.6-0.1-8.9-1.3-8.9-8.8c-0.1-12.9,0-25.8-0.1-38.7c0-8-0.7-8.7-8.5-8.7c-19.2-0.1-38.3,0-57.5,0c-3.5,0-6.5,0.5-9,3.5
+        c-2.7,3.2-6.1,2.8-8.7-0.2c-2.5-2.9-5.7-3.7-9.1-3.2c-9.3,1.4-19-0.4-27.9,3.7c-1.2,0.5-2.5,0.6-3.7,0c-10.7-4.9-22-2.4-33-2
+        c-5.4,0.2-11.5,2.2-15.6,6.9c-2.7,3.1-6.4,2.8-9.9,2.2c-3.8-0.6-3.8-3.8-4.5-6.7c-2.2-10.7-0.2-21.6-2.3-32.3
+        c-1.2-6.5-3.2-12.7-4.6-19.2c-3.2,0.6-3.1,3.2-4.2,4.8c-1.6,2.2-3.7,2.5-6.1,2.1c-2.3-0.4-2.9-2.1-3-4.1c0-0.8-0.1-1.7-0.3-2.5
+        c-0.6-2.3-1.6-4.7-4.1-4.9c-2.7-0.2-3.3,2.5-3.6,4.4c-0.8,5.8-5.9,9.4-7.2,15c-0.7,3-3.1,3-5.1,0.4c-1.1-1.5-2.1-3.2-2.6-5
+        c-2.6-8.8-6-17.2-3.3-27c1.3-4.7-2.1-10.2-0.8-15.6c0-0.2,0.3-0.3,0.4-0.5c-0.8-0.5-0.5,0.5-1,0.6c-1.1,2.1-2.1,4.3-4.9,4.5
+        c-2.9,2.7-1.4,6-1.1,9c1.2,13.1-1.5,25.6-5.2,38c-1.4,4.7-6.1,6.1-10.7,6.3c-2.9,0.1-4.7-1.5-4.7-4.6c-0.1-4-0.1-7.9,1.2-11.7
+        c0.5-1.5,1.7-3-0.2-4.6c-2.7,0.9-1.5,2.9-1.4,4.6c0.4,5.4,1.2,10.8-0.9,15.9c-1.1,2.6,0.1,4.4,1.6,6.2c3.6,4.2,4.7,9.1,4.7,14.5
+        c-0.1,13.5-0.2,27.1,0,40.6c0.1,5.9-2.2,9.9-7.5,12.5c-3.6,1.8-7,3.9-10.9,4.9c-3.3,0.9-6,2.7-8.6,4.9c-4.2,3.6-7.9,2.4-8.1-3.1
+        c-0.2-5.9-2.1-10.5-5.6-15.3c-2.6-3.5-5.2-4.3-9-4.2c-17.1,0.1-34.1,2-51.1,1.3c-4-0.2-8,0-12-0.1c-5-0.1-7.3-2.5-7.4-7.3
+        c-0.1-9.2,0-18.3-0.1-27.5c-0.1-6.9-0.7-7.6-7.6-7.6c-19.4-0.1-38.8-0.1-58.2,0c-6.9,0-7.4,0.6-7.5,7.6c0,2.7,0,5.4-0.1,8.1
+        c-0.1,3.8-0.7,7.4-5.5,7.7c-4.4,0.3-9.8,1.8-11.8-4.2c-1.2-3.5-3.6-4.2-6.8-4.2c-20.4-0.1-40.9-0.3-61.3,1.3
+        c-2.7,0.2-4.6,0.9-5.9,3.7c-2.4,5-5.6,5.6-8.1,1.1c-3.7-6.7-9.2-7.7-15.9-7.3c-18.7,1-37.4,1.8-56.2,1.3c-5.3-0.1-7.1,2.2-6.9,7.1
+        c0.7,21.7-2,43.2-1.4,64.9c0.1,3.3,1.5,8.9-3.9,8.9c-4.7,0-4.5-5.5-4.6-9c-1-18.5-2.1-37-2.7-55.5c-0.2-5.2-0.9-10.4-1.5-15.5
+        c-0.5-4.7-3.2-7.1-8-7.1c-20.2-0.1-40.5-0.1-60.7,0c-5.4,0-7.4,3.2-8,7.8c-0.5,3.9-0.3,7.9-0.2,11.9c0.6,19.8-0.9,39.5-1.4,59.3
+        c-0.1,2.4,0.4,6.2-2.5,6.2c-3.1,0-3.3-3.8-3.6-6.5c-0.3-3.9-0.3-7.9-0.1-11.9c0.7-15.4-1.5-30.8-1.4-46.2c0-0.6-0.1-1.2-0.1-1.9
+        c-1.5-13.5-3.3-15.1-17-15.1c-17.3,0-34.6-0.1-51.8,0c-7.2,0-8,0.8-8,8c-0.1,15,0,30-0.1,45c0,2.9,0.3,5.9-1.4,8.5
+        c-2.8,1.4-3.2-1-4.2-2.5c-1.1-5.9-1.5-11.9-2-17.9c-0.3-4-1.6-6.7-6-7.4c-4.2-0.6-5.2-3.6-5.3-7.3c-0.2-6.2,0-12.5-0.1-18.7
+        c-0.2-6.5-0.9-7.4-7.2-7.5c-19.8-0.2-39.6,0-59.3-0.1c-4.8,0-6.8,1.9-6.7,6.7c0.1,6.2,0.2,12.5-0.1,18.7c-0.2,4-1.3,7.7-6.3,7.6
+        c-5-0.1-6.2-3.8-6.2-7.8c0.1-10.8-0.9-10.2-11.4-10.2c-17.5,0-34.9,0-52.4,0c-7.8,0-8,0.4-8.3,8.1c-0.3,7.6-1.8,9.8-7.2,10.4
+        c-6.8,0.8-9.8-1.6-10.5-8.3c-0.8-7.5-0.8-7.7-8.2-7.6c-8,0.1-16-0.6-23.9,0.5c-2.4,0.9-2,3.2-2.6,5.1c-0.4,1.4-0.7,3.4-3.1,2.2
+        c-2.8-7.8-2.8-7.8-11.4-7.8c-5.9,0-11.7,0.2-17.6,0c-5-0.2-6.7,2-6.6,6.7c0.1,7.7,0.2,15.3-0.1,23c-0.1,2.3-0.3,4.8-2.7,5.9
+        c-2.9,1.2-3.9-1.5-5.5-3.1c-1.1-1.2-1.9-2.7-2.4-4.3c-0.4-2.3-1.3-4.4-2.4-6.5c-0.6-1.2-1.1-2.4-2.1-3.3c-0.7-0.7-1.5-1.3-2.1-2
+        c-0.3-0.4-0.5-0.8-0.7-1.2c-0.2-0.4-0.3-0.9-0.4-1.3c-0.3-0.6-0.6-1.2-1-1.8c-0.5-0.6-0.8-1.2-1.1-1.8c-0.3-0.7-0.4-1.4-0.6-2.2
+        c-0.3-1.8-1.3-3.4-2.4-4.8c-1-1.4-1.9-2.9-2.8-4.4c-8-10.5-10.5-22.4-9.1-35.2c0.2-1.8-0.1-3.7-0.2-5.7c-1.1,1.3-1.3,4-3.7,3.1
+        c-2.8-1.1-1.7-3.9-2-6.2c-0.4,4.3,1.1,7.7,3.3,11.3c4.3,7,2.8,16.3-3,23.1c-2.7,3.4-6.6,5.9-8.2,10.2c-0.7,1.3-1.7,2.3-2.9,3.2
+        c-1.9,1.1-3.6,2.4-4.3,4.6C79.1,408.2,68.7,420,58.7,432c-2.2,1.6-4,3.4-5,6.1c-1.1,1.9-2.6,3.3-4.5,4.2
+        c-6.8,2.5-13.7,1.2-20.6,0.5c-3.3-0.3-7.8-1.8-9.5,0.9c-2,3,2,5.8,3.8,8.5c11.6,17.1,23.8,33.9,35.3,51.1
+        c3.5,5.2,4.8,10.5,4.3,16.5c-0.3,3.8-1.1,7-5.8,7.6c14.7-0.4,29.2,1,43.7,1c109-0.5,217.9,1.8,326.9,1.5
+        c148.6-0.4,297.2-0.9,445.8,0.3c73.5,0.6,147.1,1.2,220.6,0.5c43.4-0.4,86.8,0.2,130.2-1.2c22.5-0.7,45.1-0.1,67.5-2.8
+        c0,0.2-0.3,0.1-0.8-0.1c-3.1-0.8-7.9,0.6-9.1-2.9c-1.3-3.9,3.5-5.6,6-8c5.1-5,10-10.1,14.5-15.7
+        C1303.7,498,1305.2,495.1,1308.9,495.5z" />
+            </g>
+          </svg>
+          <h4 class="subtitulo-barcos counter" data-count="25">0</h4>
+          <h4 class="parrafo-barcos">Destino: Francia</h4>
+          <div class="card-body btn-compra">
+            <a href="#"><button class="css-button-arrow--green">COMPRAR</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="linea-container">
+    </section>
+
+    <!-- seccion quienes somos -->
+    <section class="aboutus-container">
+      <div data-aos="fade-up">
+        <h2 class="titulo-aboutus pt-5">¿Quiénes somos?</h2>
+        <p class="parrafo-aboutus">Somos un grupo de profesionales abocados a la comercialización de granos y azúcar a
+          nivel mundial.
+          Propiciamos el trabajo en red, con acceso instantáneo a la información.
+        </p>
+        <p class="parrafo-aboutus">Con varios años de trayectoria en el mercado exterior, hemos detectado la necesidad
+          de importar cereales, tanto como trigo, maíz, soja, cebada, entre otros,
+          en Europa, para que los pequeños compradores puedan acceder a precios competitivos, dando más herramientas y
+          opciones a la hora de elegir a su proveedor.
+        </p>
+        <p class="parrafo-aboutus">Nuestros valores: Respeto, trabajo en equipo, profesionalismo, compromiso,
+          satisfacción de los clientes, pragmatismo y proactividad.
+        </p>
+        <h3 class="subtitulo-aboutus pb-5">#CerealsOnline</h3>
+      </div>
+    </section>
+
+    <!-- seccion sticky -->
+    <div class="floating-buttons d-none d-sm-block">
+      <ul>
+        <li><a href="#productos">MAIZ</a></li>
+        <li><a href="#productos">SOJA</a></li>
+        <li><a href="#productos">CEBADA</a></li>
+        <li><a href="#productos">HARINA</a></li>
+      </ul>
+    </div>
+
+    <section id="quehacemos" class="linea-container">
+    </section>
+    <section class="linea">
+    </section>
+
+    <!-- seccion que hacemos -->
+    <section class="quehacemos">
+      <div data-aos="flip-up">
+        <div class="container box1 text-center">
+          <div>
+            <h2 class="titulo-aboutus pt-5">¿Qué hacemos?</h2>
+            <p class="parrafo-aboutus">Compramos directo a productores de Argentina, Brasil, Estados Unidos, entre otros
+              orígenes,
+              y los importamos directamente, evitando intermediarios y costos extras.
+            </p>
+            <p class="parrafo-aboutus">Esta estructura de representación empresaria cuenta con una importante nómina de
+              profesionales de primer nivel y experiencia única, capaz de
+              liderar el complejo camino que hoy supone la comercialización granaria, en búsqueda permanente de la
+              excelencia necesaria para sostener valores competitivos en el mercado.
+            </p>
+            <p class="parrafo-aboutus mb-5">A través de nuestra plataforma, creamos un pool de compradores
+              directos para que lleguen a completar el volumen de un buque de carga mínima, y así entre todos, poder
+              importar en pequeñas cantidades.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sustentabilidad" class="linea">
+    </section>
+    <section class="linea-container">
+    </section>
+
+    <!-- seccion sustentabilidad -->
+    <section class="aboutus-container">
+      <div data-aos="fade-up">
+        <h2 class="titulo-aboutus pt-5">Sustentabilidad</h2>
+        <p class="subtitulo-aboutus">Lorem ipsum dolor sit amet.
+        </p>
+        <p class="parrafo-aboutus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque cumque sunt
+          asperiores, nostrum
+          ab, hic corrupti voluptatibus aperiam in quia, soluta debitis recusandae dolorum officia corporis? Velit,
+          deleniti aut!
+        </p>
+        <p class="parrafo-aboutus pb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium officia
+          cupiditate autem, neque esse quas minima porro vero,
+          corporis commodi sint velit assumenda, distinctio repudiandae dolore provident? Possimus, eaque perferendis?
+          Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit. Quas sed veniam amet nostrum ipsa reiciendis, ratione animi minus, consectetur consequuntur sapiente
+          tenetur, fugit incidunt nulla facere aperiam saepe. Quis, nemo.
+        </p>
+      </div>
+    </section>
+
+    <section id="legales" class="linea-container">
+    </section>
+
+    <!-- seccion legales -->
+    <section class="seccion-legales">
+      <div>
+        <h2 class="titulo-aboutus pt-5 color-font">Legales</h2>
+        <p class="parrafo-aboutus color-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam non
+          pariatur natus laboriosam eos error magni. Quidem necessitatibus velit nihil soluta voluptatem, unde
+          accusamus nisi, neque excepturi magni sed? Sapiente! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Asperiores, vel veniam laudantium sed at culpa eos ut voluptas commodi,
+          repellendus iure expedita aperiam nihil a mollitia amet eveniet placeat doloribus.
+        </p>
+        <p class="parrafo-aboutus color-font">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+          facilis sint
+          tempora, odit exercitationem libero eius asperiores blanditiis.
+        </p>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success boton-mas-info mx-auto mx-sm-0 mt-3 mt-sm-0" data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop">
+          Aviso legal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+          <!-- Scrollable modal -->
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="staticBackdropLabel">Legales</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4>Introducción:</h4>
+                <p><strong>CEREALS ONLINE</strong> es una plataforma de comercialización de Cereales
+                  Para la prestación de dichos servicios y sobre todo en relación con el tratamiento de los datos que
+                  conllevan estas actividades, <strong>CEREALS ONLINE</strong> se compromete a cumplir y a la aplicación
+                  de la siguiente
+                  legislación vigente:
+                </p>
+                <p>• Ley 25/2007, de 18 de octubre, de conservación de los datos relativos a las comunicaciones
+                  electrónicas y a las redes públicas de comunicaciones.</p>
+                <p>• Ley Orgánica 15/1999, de 13 de diciembre, sobre Protección de Datos de Carácter Personal (LOPD).
+                </p>
+                <p> • Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de Desarrollo de
+                  la
+                  Ley Orgánica sobre Protección de Datos de Carácter Personal.</p>
+                <p> • Ley 34/2002, de 12 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico.
+                </p>
+                <p>En cuanto a la delimitación del concepto de dato personal, y atendiendo a lo que dispone la LOPD, y
+                  que
+                  define dato personal como "cualquier información concerniente a personas físicas identificadas o
+                  identificables", por lo que se deberá tenerse en consideración esta definición a lo largo del presente
+                  documento en relación al impacto de los servicios que <strong>CEREALS ONLINE</strong> presta y su
+                  incidencia con el
+                  tratamiento de los datos personales.</p>
+                <h5>Tratamiento de los datos de los usuarios clientes de CEREALS ONLINE.</h5>
+                <p><strong>Datos relativos a los propios clientes</strong></p>
+                <p>La LOPD establecen garantías de protección de los datos personales de los clientes/usuarios de los
+                  servicios prestados por <strong>CEREALS ONLINE</strong>. Los datos personales que se recaban son los
+                  necesarios para la
+                  prestación de los servicios y su facturación y gestión administrativa, tales como y a efectos de
+                  numeración: nombre y apellidos, DNI, dirección postal, dirección electrónica, datos bancarios.</p>
+                <p>En este sentido, <strong>CEREALS ONLINE</strong> garantiza a sus usuarios/clientes que tratará sus
+                  datos personales de
+                  acuerdo con los siguientes principios:</p>
+                <p>• <strong>Información: CEREALS ONLINE</strong> informará a sus usuarios sobre el tratamiento de sus
+                  datos personales
+                  en
+                  el momento de la formalización del contrato de prestación de servicios, con indicación de las
+                  finalidades de dicho tratamiento, previsión de cesión de los mismos e indicación de como ejercer los
+                  derechos de acceso, rectificación y cancelación.</p>
+                <p>• <strong>Calidad: CEREALS ONLINE</strong> va a tratar sus datos solamente de acuerdo con las
+                  finalidades inherentes a
+                  los servicios prestados y a la facturación de los mismos, así como para la remisión de información
+                  comercial de los servicios de <strong>CEREALS ONLINE</strong>. Asimismo, se prevaldrá que los datos
+                  recabados sean
+                  adecuados, pertinentes y no excesivos en relación con la finalidad para la cual fueron recabados.</p>
+                <p>• <strong>Comunicación:</strong> Sus datos personales no van a ser cedidos por parte de
+                  <strong>CEREALS ONLINE</strong> sin su
+                  consentimiento con excepción de aquellos previstos por ley, ya sea por requerimiento de las
+                  autoridades
+                  o bien porque dicha cesión sea nea necesaria para el cumplimiento de sus obligaciones de
+                  administración
+                  de los servicios.</p>
+                <p>• <strong>Seguridad:</strong> Las medidas de seguridad exigidas por ley, en especial lo que dispone
+                  el Reglamento de
+                  Medidas de Seguridad previstas en el Real Decreto 17/2007 por el que se aprueba el Reglamento de
+                  Desarrollo de la Ley Orgánica sobre Protección de Datos de Carácter Personal, serán atendidas por
+                  parte
+                  de <strong>CEREALS ONLINE</strong> en el desarrollo de la prestación de sus servicios, con especial
+                  atención al acceso
+                  a
+                  los sistemas mediante controles de acceso, la delimitación de dicho acceso en relación a cumplimiento
+                  de
+                  las funciones del personal y el establecimiento de copias de respaldo y recuperación.</p>
+                <p>• <strong>Ejercicio de derechos:</strong> Los derechos reconocidos por la LOPD, sobre acceso,
+                  rectificación y
+                  cancelación
+                  de sus datos personales pueden ejercerse en las siguientes direcciones aportando copia de su DNI:</p>
+                <p><strong>o Dirección postal:</strong></p>
+                <p><strong>o Dirección E-mail:</strong></p>
+                <p>Asimismo, una de las obligaciones derivadas del cumplimiento de la Ley de Protección de Datos es la
+                  inscripción de los ficheros de datos personal “es en el Registro de Protección de Datos, cuyo
+                  contenido
+                  es de acceso público sobre el cual le informamos que <strong>CEREALS ONLINE</strong> tiene un fichero
+                  inscrito con el
+                  nombre "USUARIOS".</p>
+                <p>Datos relativos a las comunicaciones de sus usuarios</p>
+                <h5>Secreto de las comunicaciones</h5>
+                <p>La Ley General de Telecomunicaciones establece el secreto de comunicaciones por parte de las
+                  operadoras
+                  que presten servicios de comunicaciones electrónicas, debiendo adoptar las medidas de índole técnica
+                  para que esta medida sea efectiva. Asimismo, las interceptaciones de las mismas solamente podrán
+                  realizarse bajo determinados supuestos y condiciones previstas por ley y con la autorización previa de
+                  las autoridades pertinentes.</p>
+                <p>Dicha Ley, también establece un protocolo de actuación para el caso de que haya riesgo de violación
+                  de
+                  datos personales, para lo cual se informará a los usuarios de la existencia de dicho riesgo y sobre
+                  las
+                  medidas a adoptar. En caso de que se haya producido violación de los datos personales, <strong>CEREALS
+                    ONLINE</strong>
+                  lo
+                  comunicará sin dilación a la Agencia de Protección de Datos y si afectara de forma negativa a la
+                  intimidad o a los datos personales de un abonado o particular, éste también será notificado de la
+                  violación.</p>
+                <h4>Condiciones de uso del servicio</h4>
+                <p>Estas Condiciones se aplicarán a los servicios ofrecidos por <strong>CEREALS ONLINE.</strong></p>
+                <h5>Su relación con CEREALS ONLINE</h5>
+                <p>1. El uso que haga del software, de los servicios y del sitio web (en adelante, los "Servicios", de
+                  los que se excluyen aquellos servicios que <strong>CEREALS ONLINE</strong> pueda proporcionarle en
+                  virtud de cualquier otro acuerdo escrito independiente) se rige por las condiciones del presente
+                  acuerdo legal suscrito entre usted y <strong>CEREALS ONLINE</strong></p>
+                <p>2. A menos que usted y <strong>CEREALS ONLINE</strong> establezcan lo contrario por escrito, el
+                  acuerdo con nosotros,
+                  siempre incluirá, como mínimo, las condiciones estipuladas en este documento. En adelante, estas
+                  condiciones
+                  se denominarán "Condiciones Generales".</p>
+                <p>3. El acuerdo suscrito entre usted y <strong>CEREALS ONLINE</strong> también podrá incluir las
+                  condiciones establecidas en las Condiciones
+                  Adicionales del servicio de <strong>CEREALS ONLINE</strong>, además de las Condiciones Generales. En
+                  adelante, todo ello se denominará indistintamente
+                  las "Condiciones", las cuales conforman un acuerdo legalmente vinculante entre usted y <strong>CEREALS
+                    ONLINE</strong>. Siempre que un Servicio esté
+                  regido por Condiciones Adicionales, podrá leerlas en el espacio destinado a tal fin en el Servicio o a
+                  través del uso de éste.
+                </p>
+                <p><strong>o</strong> En el caso de que exista alguna incoherencia entre las Condiciones Adicionales y
+                  las Condiciones
+                  Generales en relación con el
+                  Servicio, prevalecerán las disposiciones de las primeras.</p>
+                <h5>Aceptación de las Condiciones</h5>
+                <p>1. Antes de hacer uso de los Servicios, deberá aceptar las Condiciones. De lo contrario, no podrá
+                  usarlos.</p>
+                <p>2. Para aceptar las Condiciones deberá hacer clic en la casilla habilitada a tal fin en la interfaz
+                  de usuario del Servicio en cuestión.</p>
+                <h5>Uso de los Servicios</h5>
+                <p>1. Acepta utilizar los Servicios exclusivamente con los fines estipulados en (a) las Condiciones y
+                  (b) en cualquier ley o regulación aplicable o en cualquiera de las prácticas o directrices aceptadas
+                  en las jurisdicciones pertinentes.</p>
+                <p>2. Asimismo, se compromete a no involucrarse en ninguna actividad que interfiera o que interrumpa los
+                  Servicios o los servidores y redes conectados a estos.</p>
+                <p>3. A menos que se estipule lo contrario en un acuerdo independiente entre usted y <strong>CEREALS
+                    ONLINE</strong>, se
+                  compromete a no reproducir, duplicar, copiar, vender, comercializar ni revender las informaciones o
+                  documentos, para ningún fin.</p>
+                <p>4. Por el presente acuerdo, acepta que usted es el único responsable (y que <strong>CEREALS
+                    ONLINE</strong> renuncia a
+                  toda responsabilidad hacia usted o hacia cualquier tercero) del incumplimiento de cualquiera de las
+                  obligaciones contraídas en virtud de las Condiciones, así como de las consecuencias derivadas de dicho
+                  incumplimiento (entre las que se incluye cualquier pérdida o daño que pudiera ocasionar a
+                  <strong>CEREALS
+                    ONLINE</strong>).</p>
+                <h5>Política de privacidad</h5>
+                <p>La política de privacidad de <strong>CEREALS ONLINE</strong> explica el tratamiento de los datos
+                  personales al usar
+                  nuestros Servicios. Si usted usa nuestros Servicios, acepta expresamente que <strong>CEREALOS
+                    ONLINE</strong> trate
+                  dichos datos de conformidad con la referida política de privacidad.</p>
+                <h5>CEREALOS ONLINE</h5>
+                <p>1. Usted acepta que <strong>CEREALS ONLINE</strong> o sus licenciantes son los propietarios de todos
+                  los derechos, títulos e intereses legales asociados a los Servicios, incluidos todos los derechos
+                  sobre la propiedad intelectual e industrial que actúen sobre ellos, independientemente de si tales
+                  derechos están registrados o no y del país en el que existan.</p>
+                <p>2. A menos que acuerde lo contrario por escrito con <strong>CEREALS ONLINE</strong>, ninguna de las
+                  disposiciones de las Condiciones le otorga el derecho a usar los nombres y las marcas comerciales de
+                  <strong>CEREALS ONLINE</strong> ni sus marcas de servicio, logotipos, nombres de dominio u otras
+                  características distintivas de marca.</p>
+                <h5>Actualizaciones del Software</h5>
+                <p>El Software que utiliza podrá descargar e instalar automáticamente actualizaciones de <strong>CEREALS
+                    ONLINE</strong> de forma periódica. Dichas actualizaciones están diseñadas para mejorar, optimizar y
+                  desarrollar los Servicios y se pueden presentar en forma de correcciones, funciones mejoradas, nuevos
+                  módulos de software y versiones totalmente nuevas. Acepta recibir dichas actualizaciones, y permite a
+                  <strong>CEREALS ONLINE</strong> proporcionárselas, como parte de estos Servicios.</p>
+                <h5>Finalización de su relación con <strong>CEREALS ONLINE</strong>.</h5>
+                <p>1. Las Condiciones seguirán vigentes hasta que usted o <strong>CEREALS ONLINE</strong> decidan
+                  resolverlas, según lo estipulado a continuación.</p>
+                <p>2. <strong>CEREALS ONLINE</strong> podrá resolver el acuerdo legal establecido con usted en cualquier
+                  momento si:</p>
+                <p><strong>o</strong> Ha incumplido alguna de las disposiciones de las Condiciones o ha actuado de algún
+                  modo que demuestre que no tiene intención de cumplir con tales disposiciones o que no puede
+                  cumplirlas.</p>
+                <p><strong>o</strong> Así se lo exige a CEREALS ONLINE la ley, por ejemplo, en caso de que la prestación
+                  de los Servicios sea o pase a ser ilegal.</p>
+                <p><strong>o</strong> El socio con el que CEREALS ONLINE le ofrece los Servicios ha suspendido su
+                  relación con CEREALS ONLINE o ha dejado de proporcionarle los Servicios.</p>
+                <p><strong>o</strong> CEREALS ONLINE se encuentra en trámites de interrumpir la prestación de los
+                  Servicios a los usuarios del país de residencia del usuario o en el que éste utiliza el Servicio.</p>
+                <p><strong>o</strong> La prestación de los Servicios por parte de CEREALS ONLINE ha dejado de ser
+                  comercialmente viable desde el punto de vista de CEREALS ONLINE.</p>
+                <h5>Exclusión de garantías</h5>
+                <p>1. Usted manifiesta y admite expresamente que el uso de los servicios se realiza bajo su propia
+                  responsabilidad y que el servicio se suministra "tal como es" y en función de "su disponibilidad".</p>
+                <p>2. En concreto, <strong>CEREALS ONLINE</strong>, sus subsidiarias y filiales y sus licenciantes no
+                  garantizan que:</p>
+                <p><strong>o</strong> El uso que haga de los servicios se ajuste a sus necesidades específicas.</p>
+                <p><strong>o</strong> Los servicios se proporcionen de forma ininterrumpida, precisa, segura o sin
+                  errores.</p>
+                <p><strong>o</strong> La información que obtenga como consecuencia del uso de los servicios sea exacta o
+                  fiable.</p>
+                <p><strong>o</strong> Se corregirán los defectos de y de operatividad de cualquier software que se
+                  proporcione como parte de los servicios.</p>
+                <p><strong>o</strong> Todo material descargado u obtenido por cualquier otro medio a través del uso de
+                  los servicios corre a su cuenta y riesgo, y usted será el único responsable de cualquier daño
+                  ocasionado en su sistema informático o en cualquier otro dispositivo, así como de la pérdida de datos
+                  que pueda resultar de la descarga de dicho material.</p>
+                <p><strong>o</strong> Ningún tipo de notificación ni de información, ya sea oral o escrita, que haya
+                  obtenido de <strong>CEREALS ONLINE</strong> o de los servicios, o mediante estos últimos, originará
+                  garantías no mencionadas expresamente en las presentes condiciones.</p>
+                <p><strong>o</strong> <strong>CEREALS ONLINE</strong> renuncia expresamente a todas las garantías y
+                  condiciones de cualquier tipo, ya sean explícitas o implícitas, incluido, entre otras, las garantías y
+                  las condiciones implícitas de comerciabilidad, de idoneidad para un fin concreto y de no infracción.
+                </p>
+                <h5>Limitación de responsabilidades/funcionamiento</h5>
+                <p>1. Usted reconoce y acepta expresamente que <strong>CEREALS ONLINE</strong>, sus filiales y sus
+                  licenciantes no serán responsables ante usted por:</p>
+                <p><strong>o</strong> Ningún daño que usted pudiera ocasionar al propio usuario o a terceros, incluyendo
+                  cualquier pérdida de beneficios, ya sea directa o indirecta, cualquier pérdida de prestigio
+                  profesional o de reputación empresarial, cualquier pérdida de datos por su parte, gastos del
+                  abastecimiento de bienes o de servicios sustitutivos u otras pérdidas intangibles;</p>
+                <p><strong>o</strong> Ninguna pérdida o daño que usted pueda ocasionar, incluidas, entre otras, pérdidas
+                  o daños originados como consecuencia de:</p>
+                <p><strong>•</strong> La confianza depositada por su parte en la exhaustividad, en la precisión o en la
+                  existencia de publicidad o como consecuencia de cualquier relación o transacción entre usted y otro
+                  anunciante o patrocinador cuya publicidad aparezca en los servicios;</p>
+                <p><strong>•</strong> Los cambios que <strong>CEREALS ONLINE</strong> pueda incorporar en los servicios o
+                  la interrupción temporal o definitiva de estos o de alguna de sus funciones;</p>
+                <p><strong>•</strong> La eliminación o el daño del contenido y de otros datos de divulgación que se
+                  alojan en los servicios o que se ofrecen a través de estos, así como la imposibilidad de almacenarlos;
+                </p>
+                <p><strong>•</strong> La imposibilidad de proporcionar a <strong>CEREALS ONLINE</strong> información
+                  precisa de la cuenta;</p>
+                <p><strong>•</strong> La negligencia por no haber preservado su contraseña o la información de su cuenta
+                  de forma segura y confidencial.</p>
+                <h5>Miscelánea</h5>
+                <p>1. Las presentes Condiciones constituyen el acuerdo legal completo entre usted y <strong>CEREALS
+                    ONLINE</strong>, rigen el uso que haga de los Servicios, sin incluir los servicios que CEREALS
+                  ONLINE le ofrezca en virtud de un acuerdo por escrito independiente, y sustituyen cualquier acuerdo
+                  previo que exista entre usted y <strong>CEREALS ONLINE</strong> relativo a los Servicios.</p>
+                <p>2. Acepta que <strong>CEREALS ONLINE</strong> puede proporcionarle avisos, incluidos los relativos a los cambios de
+                  las Condiciones, a través del correo electrónico, del correo postal o mediante su publicación en los
+                  Servicios.</p>
+                <p>3. Acepta que, si <strong>CEREALS ONLINE</strong> no ejerce ningún derecho estipulado en las Condiciones o de los que
+                  <strong>CEREALS ONLINE</strong> pueda beneficiarse en virtud de alguna ley aplicable, se interpretará como que ello no
+                  supone una renuncia legal de los derechos de <strong>CEREALS ONLINE</strong> y que <strong>CEREALS ONLINE</strong> seguirá disponiendo
+                  de estos derechos.</p>
+                <p>4. Si un tribunal, con la jurisdicción competente para decidir sobre este asunto, falla que alguna de
+                  las disposiciones de estas Condiciones no es válida, dicha disposición se eliminará de las Condiciones
+                  sin que ello afecte al resto. El resto de Las condiciones seguirán siendo válidas y vigentes.</p>
+                <p>5. Reconoce y acepta que cada uno de los miembros del grupo de empresas subsidiarias y filiales de
+                  <strong>CEREALS ONLINE</strong> constituyen beneficiarios terceros de las Condiciones y que dichas empresas están
+                  autorizadas a aplicar directamente las disposiciones de las Condiciones que les concedan los
+                  beneficios o derechos pertinentes. Excepto lo anteriormente estipulado, no habrá ninguna otra persona
+                  o empresa beneficiaria de las presentes Condiciones.</p>
+                <p>6. Las Condiciones del servicio y la relación contractual entre usted y <strong>CEREALS ONLINE</strong> establecida en
+                  virtud de éstas se regirán por las leyes de la Unión Europea.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success boton-legales" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="linea-container">
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3 id="footer-title">CEREALS ONLINE</h3>
+              <p>
+                España: <br>
+                Paseo de la Castellana 295c Planta 18 Torre Cristal, Madrid (CP28046)<br>
+                Argentina: <br>
+                Av. del Libertador 2442 Piso 4, Olivos, Vicente Lopez, Buenos Aires (CP1636) <br>
+                Brasil: <br>
+                Comendador Correa Junior 579, Paranaguá (CP83203-560)<br><br>
+                <strong>Email:</strong> info@cereals-online.com<br>
+              </p>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Enlaces de interés</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#index">Inicio</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#aboutus">¿Quiénes somos?</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#quehacemos">¿Qué hacemos?</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#sustentabilidad">Sustentabilidad</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#legales">Legales</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Servicios</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#productos">Maíz</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#productos">Soja</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#productos">Cebada</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#productos">Harina</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Suscríbase a nuestro Newsletter</h4>
+              <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Suscríbase">
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="copyright-wrap d-md-flex py-4 mx-auto">
+          <div class="mr-md-auto text-center text-md-left">
+            <div class="copyright">
+              &copy; Copyright <strong><span>Cereals Online</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              Designed by Lemur Media Studio</a>
+            </div>
+          </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

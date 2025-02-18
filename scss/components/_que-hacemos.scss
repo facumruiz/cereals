@@ -1,0 +1,30 @@
+/* seccion que hacemos */
+
+.quehacemos {
+    background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding: 70px 550px; 
+}
+
+/* .box1 {
+    background-color: rgba(161, 161, 161, 0.3);
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 1; 
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    padding: 25px 25px; 
+}  */ 
+
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+} 
+
