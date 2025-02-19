@@ -576,7 +576,7 @@ nav {
 }
 
 .card-productos {
-  background: url(../../img/vector_naranja_dos.png);
+  background: url(https://raw.githubusercontent.com/facumruiz/cereals/refs/heads/main/img/vector_naranja_dos.png);
   background-position: top;
   background-size: cover;
   padding: 100px 150px;
@@ -634,7 +634,7 @@ nav {
 
 /* cards barcos */
 .seccion-barcos {
-  background: url(../../img/barco1.png);
+  background: url(https://github.com/facumruiz/cereals/blob/main/img/barco1.png?raw=true);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
@@ -833,7 +833,7 @@ nav {
 
 /* seccion que hacemos */
 .quehacemos {
-  background: url(../../img/portcod.jpg);
+  background: url(https://github.com/facumruiz/cereals/blob/main/img/portcod.jpg?raw=true);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
@@ -1074,7 +1074,7 @@ nav {
 }
 
 .seccion-legales {
-  background: url(../../img/vector_naranja_dos.png);
+  background: url(https://raw.githubusercontent.com/facumruiz/cereals/refs/heads/main/img/vector_naranja_dos.png);
   background-position: top;
   background-size: cover;
   padding: 70px 550px;
