@@ -27,7 +27,7 @@
 }
 
 /* MOBILE STYLES */
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 600px) {
   /* HEADER */
   .imagen-header {
     text-align: left !important;
