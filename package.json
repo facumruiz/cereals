@@ -16,5 +16,7 @@
     "url": "https://github.com/Lemur-Media-Studio/Cereals-Online/issues"
   },
   "homepage": "https://github.com/Lemur-Media-Studio/Cereals-Online#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
 }

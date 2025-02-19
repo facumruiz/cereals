@@ -27,14 +27,13 @@
 }
 
 /* MOBILE STYLES */
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 485px) {
   /* HEADER */
   .imagen-header {
     text-align: left !important;
     height: 60px !important;
     position: static !important;
   }
-
   .navbar-toggler {
     background-color: #ffbb33 !important;
     border-radius: 20px !important;
@@ -45,25 +44,20 @@
     color: #217a5c;
     text-align: left !important;
   }
-
   .nav-link {
     color: #fff !important;
   }
-
   .nav-link:hover {
     color: #ffbb33 !important;
     transition: 1s;
   }
-
   .navbar-nav {
     display: flex !important;
     justify-content: center !important;
   }
-
   .menu-principal {
     margin: 0px !important;
   }
-
   .menu {
     display: flex;
     justify-content: center !important;
@@ -71,27 +65,22 @@
     position: static !important;
     font-family: "Titillium Web", sans-serif;
   }
-
   .bandera-menu:hover {
     transform: scale(1.3) !important;
     transition: 1s;
     border-radius: 3px;
   }
-
   .login {
     position: static;
   }
-
   .banderas-mobile {
     position: relative;
     right: 10px !important;
   }
-
   /* CARPOUSEL */
   .img-carousel {
     height: 300px;
   }
-
   .titulo-carousel {
     font-family: "Titillium Web", sans-serif;
     font-size: 25px !important;
@@ -99,39 +88,32 @@
     bottom: 45px !important;
     filter: drop-shadow(0 0 0.5rem black);
   }
-
   /* CARDS */
   .card-productos {
     background-color: white;
     padding: 10px 0px !important;
   }
-
   .card {
     color: white;
     filter: drop-shadow(0 0 0.5rem black);
     border-radius: 15px !important;
   }
-
   .card-imagen1 {
     background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
     background-size: 100px;
   }
-
   .card-imagen2 {
     background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
     background-size: 100px;
   }
-
   .card-imagen3 {
     background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
     background-size: 100px;
   }
-
   .card-imagen4 {
     background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
     background-size: 100px;
   }
-
   .card-title {
     font-family: "Titillium Web", sans-serif;
     font-size: 40px;
@@ -142,7 +124,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .card-text {
     font-size: 18px !important;
     font-family: "Titillium Web", sans-serif;
@@ -150,40 +131,33 @@
     top: 15px;
     text-align: center !important;
   }
-
   .imagen-container {
     position: relative !important;
     display: inline-block !important;
     text-align: center !important;
   }
-
   .imagen-productos {
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px !important;
   }
-
   .seccion-barcos {
     padding: 100px 0px !important;
   }
-
   .img-svg {
     position: relative !important;
     right: 12% !important;
   }
-
   .card-barcos {
     filter: drop-shadow(0 0 0.5rem black);
     margin-top: 15px !important;
   }
-
   /* ABOUT US */
   .aboutus-container {
-    background: #020024;
-    background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(337deg, rgb(2, 0, 36) 0%, #07291a 41%, #217A5C 100%);
     padding: 0 20px !important;
     text-align: center !important;
   }
-
   .titulo-aboutus {
     display: flex;
     justify-content: center;
@@ -193,7 +167,6 @@
     color: white;
     filter: drop-shadow(0 0 0.5rem black);
   }
-
   .parrafo-aboutus {
     display: flex;
     justify-content: center !important;
@@ -204,7 +177,6 @@
     filter: drop-shadow(0 0 0.5rem black);
     margin-bottom: 0px !important;
   }
-
   .subtitulo-aboutus {
     display: flex;
     justify-content: center;
@@ -213,7 +185,6 @@
     color: #ffbb33;
     margin-bottom: -1px !important;
   }
-
   /* QUE HACEMOS */
   .quehacemos {
     background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
@@ -223,7 +194,6 @@
     background-size: cover;
     padding: 20px 20px !important;
   }
-
   /* .box1 {
       background-color: rgba(161, 161, 161, 0.3);
       border-radius: 5px; 
@@ -240,7 +210,6 @@
     height: 100%;
     width: 100%;
   }
-
   /* LEGALES */
   .seccion-legales {
     background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
@@ -248,20 +217,16 @@
     background-size: cover;
     padding: 20px 20px !important;
   }
-
   .boton-mas-info {
     position: static !important;
     display: flex !important;
   }
-
   .boton-legales {
     background-color: #ffbb33 !important;
   }
-
   .modal-header {
     background-color: #217a5c !important;
   }
-
   .color-font {
     color: #000 !important;
     filter: drop-shadow(0 0 0.8rem black);
@@ -278,26 +243,21 @@
     position: static !important;
     padding-left: 150px;
   }
-
   .nav-link {
     color: #fff !important;
   }
-
   .nav-link:hover {
     color: #ffbb33 !important;
     transition: 1s;
   }
-
   .navbar-nav {
     display: flex !important;
     justify-content: center !important;
     padding-right: 80px !important;
   }
-
   .menu-principal {
     margin: 0px !important;
   }
-
   .menu {
     display: flex;
     justify-content: center !important;
@@ -305,31 +265,25 @@
     position: static !important;
     font-family: "Titillium Web", sans-serif;
   }
-
   .lenguajes-login {
     padding-left: 35px !important;
   }
-
   .bandera-menu:hover {
     transform: scale(1.3) !important;
     transition: 1s;
     border-radius: 3px;
   }
-
   .login {
     position: static;
   }
-
   .banderas-mobile {
     position: relative;
     right: 10px !important;
   }
-
   /* CAROUSEL */
   .img-carousel {
     height: 650px;
   }
-
   .titulo-carousel {
     font-family: "Titillium Web", sans-serif;
     font-size: 70px;
@@ -337,7 +291,6 @@
     bottom: 150px !important;
     filter: drop-shadow(0 0 0.5rem black);
   }
-
   /* CARDS */
   .card {
     color: white;
@@ -347,27 +300,22 @@
     width: 80%;
     margin: 0 auto !important;
   }
-
   .card-imagen1 {
     background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen2 {
     background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen3 {
     background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen4 {
     background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
     background-size: 630px !important;
   }
-
   .card-title {
     font-family: "Titillium Web", sans-serif;
     font-size: 40px;
@@ -378,7 +326,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .card-text {
     font-size: 20px;
     font-family: "Titillium Web", sans-serif;
@@ -386,37 +333,31 @@
     top: 15px;
     text-align: center !important;
   }
-
   .btn-compra {
     position: relative !important;
     left: 29% !important;
   }
-
   .imagen-container {
     position: relative !important;
     display: inline-block !important;
     text-align: center !important;
   }
-
   .imagen-productos {
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px !important;
   }
-
   /* progress bar */
   .img-svg {
     position: relative;
     right: 4% !important;
   }
-
   /* ABOUT US */
   .aboutus-container {
-    background: #020024;
-    background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(337deg, rgb(2, 0, 36) 0%, #07291a 41%, #217A5C 100%);
     padding: 100px 200px !important;
     text-align: center !important;
   }
-
   .titulo-aboutus {
     display: flex;
     justify-content: center;
@@ -426,7 +367,6 @@
     color: white;
     filter: drop-shadow(0 0 0.5rem black);
   }
-
   .parrafo-aboutus {
     display: flex;
     justify-content: center !important;
@@ -436,7 +376,6 @@
     font-family: "Titillium Web", sans-serif;
     filter: drop-shadow(0 0 0.5rem black);
   }
-
   .subtitulo-aboutus {
     display: flex;
     justify-content: center;
@@ -445,7 +384,6 @@
     color: #ffbb33;
     margin-bottom: -1px !important;
   }
-
   /* QUE HACEMOS */
   .quehacemos {
     background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
@@ -455,7 +393,6 @@
     background-size: cover;
     padding: 100px 180px !important;
   }
-
   /* .box1 {
       background-color: rgba(161, 161, 161, 0.3);
       border-radius: 5px; 
@@ -472,12 +409,10 @@
     height: 100%;
     width: 100%;
   }
-
   /* LEGALES */
   .seccion-legales {
     padding: 100px 180px !important;
   }
-
   .boton-mas-info {
     position: relative;
     left: 830px !important;
@@ -496,27 +431,22 @@
     width: 80%;
     margin: 0 auto !important;
   }
-
   .card-imagen1 {
     background: url(https://i.ibb.co/TbSJn4v/maiz1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen2 {
     background: url(https://i.ibb.co/ySHgLym/SOJA1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen3 {
     background: url(https://i.ibb.co/2csdjqn/CEBADA1.jpg);
     background-size: 650px !important;
   }
-
   .card-imagen4 {
     background: url(https://i.ibb.co/yFshqJV/HARINA1.jpg);
     background-size: 630px !important;
   }
-
   .card-title {
     font-family: "Titillium Web", sans-serif;
     font-size: 40px;
@@ -527,7 +457,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-
   .card-text {
     font-size: 20px;
     font-family: "Titillium Web", sans-serif;
@@ -535,13 +464,11 @@
     top: 15px;
     text-align: center !important;
   }
-
   .imagen-container {
     position: relative !important;
     display: inline-block !important;
     text-align: center !important;
   }
-
   .imagen-productos {
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px !important;
@@ -649,7 +576,7 @@ nav {
 }
 
 .card-productos {
-  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background: url(../../img/vector_naranja_dos.png);
   background-position: top;
   background-size: cover;
   padding: 100px 150px;
@@ -707,7 +634,7 @@ nav {
 
 /* cards barcos */
 .seccion-barcos {
-  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888148126454657085/barco1.png);
+  background: url(../../img/barco1.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
@@ -871,8 +798,8 @@ nav {
 
 /* seccion about us */
 .aboutus-container {
-  background: #020024;
-  background: linear-gradient(337deg, #020024 0%, #07291a 41%, #217A5C 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(337deg, rgb(2, 0, 36) 0%, #07291a 41%, #217A5C 100%);
   padding: 70px 550px;
 }
 
@@ -906,7 +833,7 @@ nav {
 
 /* seccion que hacemos */
 .quehacemos {
-  background: url(https://cdn.discordapp.com/attachments/880523057557569609/883047132150509578/portcod.jpg);
+  background: url(../../img/portcod.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: top;
@@ -938,8 +865,8 @@ nav {
 
 /* seccion mapa */
 .mapa {
-  background: #020024;
-  background: linear-gradient(200deg, white 0%, #217A5C 41%, #020024 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(200deg, white 0%, #217A5C 41%, rgb(2, 0, 36) 100%);
   padding: 100px 550px;
 }
 
@@ -1108,7 +1035,7 @@ nav {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #f37019;
+  background: rgb(243, 112, 25);
 }
 
 #footer .copyright-wrap {
@@ -1147,7 +1074,7 @@ nav {
 }
 
 .seccion-legales {
-  background: url(https://cdn.discordapp.com/attachments/880523057557569609/888235458667110430/vector_naranja_dos.png);
+  background: url(../../img/vector_naranja_dos.png);
   background-position: top;
   background-size: cover;
   padding: 70px 550px;
